@@ -7,7 +7,7 @@ Toplam: 21 sprint, 166 görev, ~506 saat (≈ 9–10 ay, haftada 6 gün × 2 saa
 
 Ayrıntılı görevler (kaynak, hedef, süre, kanıt) GitHub issue'larında. Sprint = Milestone.
 
-**Aktif sprint: Sprint 01.** Sonraki sprintlerin detayları sırası geldikçe gözden geçirilir. Not: ortam CachyOS (Arch tabanlı); Sprint 3'teki `apt` görevleri `pacman` ile uyarlanacak.
+**Aktif sprint: Sprint 01.** Sonraki sprintlerin detayları sırası geldikçe gözden geçirilir. Not: ortam CachyOS (Arch tabanlı); paket yönetimi görevleri `pacman` ile uyarlandı.
 
 ## Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi
 **Hedefler**
@@ -25,7 +25,7 @@ Ayrıntılı görevler (kaynak, hedef, süre, kanıt) GitHub issue'larında. Spr
 - [ ] #166 Makineyi test sunucusuna çevir: Nginx + MariaDB — 4 sa
 - [ ] #20 Sprint retro ve notlar — 1 sa
 
-## Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler
+## Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi
 **Hedefler**
 - Boru hattı (pipe) ile veri işleme: grep/sed/awk
 - Vim ile rahat düzenleme
@@ -46,7 +46,7 @@ Ayrıntılı görevler (kaynak, hedef, süre, kanıt) GitHub issue'larında. Spr
 - Süreç ve systemd servis yönetimi
 - Log okuma ve sorun giderme
 
-- [ ] #29 Paket yönetimi — 4 sa
+- [ ] #29 Paket yönetimi: pacman (CachyOS) ve apt karşılaştırması — 4 sa
 - [ ] #30 Kullanıcı ve grup yönetimi — 4 sa
 - [ ] #31 Dosya izinleri, ACL ve özel bitler — 3 sa
 - [ ] #32 Disk yönetimi: bölüm, dosya sistemi, mount, LVM — 4 sa

@@ -7,7 +7,7 @@
   },
   {
    "no": 2,
-   "title": "Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler",
+   "title": "Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi",
    "description": "Hedefler:\n- Boru hattı (pipe) ile veri işleme: grep/sed/awk\n- Vim ile rahat düzenleme\n- Arşiv, yedek ve sistem bilgisi araçları\n\nToplam: 8 görev, ~23 saat (günde 2 saat ≈ 1.9 hafta, haftada 6 gün)."
   },
   {
@@ -210,7 +210,7 @@
    "sprint": 2,
    "n": 1,
    "title": "S02·T1 — Metin verilerini işlemek",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 1/8\n\n**Konu:** cat/less/head/tail/wc/sort/uniq/cut/tr, yönlendirme ve boru hattı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 10 (1 sa 56 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Redirection ve Pipelines\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] stdout/stderr/stdin farkını ve `2>&1` anlamını biliyorum\n- [ ] Boru hattıyla 3+ komutu zincirleyebiliyorum\n\n**✅ Kanıt / çıktı:** Bir log dosyasından en sık geçen 10 IP'yi tek satırda çıkaran komut.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 1/8\n\n**Konu:** cat/less/head/tail/wc/sort/uniq/cut/tr, yönlendirme ve boru hattı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 10 (1 sa 56 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Redirection ve Pipelines\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] stdout/stderr/stdin farkını ve `2>&1` anlamını biliyorum\n- [ ] Boru hattıyla 3+ komutu zincirleyebiliyorum\n\n**✅ Kanıt / çıktı:** Bir log dosyasından en sık geçen 10 IP'yi tek satırda çıkaran komut.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-3h"
@@ -221,7 +221,7 @@
    "sprint": 2,
    "n": 2,
    "title": "S02·T2 — Metinleri filtrelemek: grep, regex, find",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 2/8\n\n**Konu:** grep -E, düzenli ifadeler, find ile -exec/xargs.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 11\n- [regex101](https://regex101.com)\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 10–15\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Temel regex yazabiliyorum\n- [ ] find + xargs ile toplu işlem yapabiliyorum\n\n**✅ Kanıt / çıktı:** 5 regex alıştırması çözümüyle birlikte `notes/regex.md`.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 2/8\n\n**Konu:** grep -E, düzenli ifadeler, find ile -exec/xargs.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 11\n- [regex101](https://regex101.com)\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 10–15\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Temel regex yazabiliyorum\n- [ ] find + xargs ile toplu işlem yapabiliyorum\n\n**✅ Kanıt / çıktı:** 5 regex alıştırması çözümüyle birlikte `notes/regex.md`.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-4h"
@@ -232,7 +232,7 @@
    "sprint": 2,
    "n": 3,
    "title": "S02·T3 — sed ve awk",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 3/8\n\n**Konu:** Satır düzenleme (sed), sütun/alan işleme (awk).\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [sed ve awk ile metin işleme eğitimi](https://www.youtube.com/results?search_query=sed+ve+awk+ile+metin+i%C5%9Fleme+e%C4%9Fitimi)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Text Processing\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `sed s///` ile toplu değiştirme yapabiliyorum\n- [ ] awk ile sütun toplayabiliyorum\n\n**✅ Kanıt / çıktı:** Access-log'dan durum koduna göre sayım yapan awk tek satırı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 3/8\n\n**Konu:** Satır düzenleme (sed), sütun/alan işleme (awk).\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [sed ve awk ile metin işleme eğitimi](https://www.youtube.com/results?search_query=sed+ve+awk+ile+metin+i%C5%9Fleme+e%C4%9Fitimi)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Text Processing\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `sed s///` ile toplu değiştirme yapabiliyorum\n- [ ] awk ile sütun toplayabiliyorum\n\n**✅ Kanıt / çıktı:** Access-log'dan durum koduna göre sayım yapan awk tek satırı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-3h"
@@ -243,7 +243,7 @@
    "sprint": 2,
    "n": 4,
    "title": "S02·T4 — Vim ve nano",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 4/8\n\n**Konu:** Vim modları, hareket, arama-değiştirme, vimtutor.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 13 (46 dk)\n- Terminalde `vimtutor` (2 tur)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Fare olmadan Vim'de dosya açıp düzenleyip kaydedebiliyorum\n- [ ] Arama ve toplu değiştirme yapabiliyorum\n\n**✅ Kanıt / çıktı:** vimtutor tamamlandı; `.vimrc` temel ayarlar.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 4/8\n\n**Konu:** Vim modları, hareket, arama-değiştirme, vimtutor.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 13 (46 dk)\n- Terminalde `vimtutor` (2 tur)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Fare olmadan Vim'de dosya açıp düzenleyip kaydedebiliyorum\n- [ ] Arama ve toplu değiştirme yapabiliyorum\n\n**✅ Kanıt / çıktı:** vimtutor tamamlandı; `.vimrc` temel ayarlar.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-3h"
@@ -254,7 +254,7 @@
    "sprint": 2,
    "n": 5,
    "title": "S02·T5 — Arşivleme, sıkıştırma ve rsync",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 5/8\n\n**Konu:** tar, gzip/zstd, rsync ile artımlı yedek.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 14 (2 sa 20 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Archiving and Backup\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] tar ile oluştur/listele/aç yapabiliyorum\n- [ ] rsync ile artımlı yedek alabiliyorum\n\n**✅ Kanıt / çıktı:** `backup.sh` ilk sürümü (rsync + tarih damgalı arşiv).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 5/8\n\n**Konu:** tar, gzip/zstd, rsync ile artımlı yedek.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 14 (2 sa 20 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Archiving and Backup\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] tar ile oluştur/listele/aç yapabiliyorum\n- [ ] rsync ile artımlı yedek alabiliyorum\n\n**✅ Kanıt / çıktı:** `backup.sh` ilk sürümü (rsync + tarih damgalı arşiv).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-3h"
@@ -265,7 +265,7 @@
    "sprint": 2,
    "n": 6,
    "title": "S02·T6 — Sistem bilgisi araçları",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 6/8\n\n**Konu:** uname, lscpu, free, df/du, lsblk, lsof, ss, dmesg.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 15 (1 sa 10 dk)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir makinenin CPU/RAM/disk/ağ durumunu 5 komutla çıkarabiliyorum\n- [ ] Disk dolduğunda hangi dizinin şişirdiğini bulabiliyorum\n\n**✅ Kanıt / çıktı:** `sysinfo.sh`: tek ekranlık sistem özeti.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 6/8\n\n**Konu:** uname, lscpu, free, df/du, lsblk, lsof, ss, dmesg.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 15 (1 sa 10 dk)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir makinenin CPU/RAM/disk/ağ durumunu 5 komutla çıkarabiliyorum\n- [ ] Disk dolduğunda hangi dizinin şişirdiğini bulabiliyorum\n\n**✅ Kanıt / çıktı:** `sysinfo.sh`: tek ekranlık sistem özeti.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-3h"
@@ -276,7 +276,7 @@
    "sprint": 2,
    "n": 7,
    "title": "S02·T7 — Bandit ile pratik: ağ ve SSH seviyeleri",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 7/8\n\n**Konu:** Öğrenilenleri CTF mantığıyla pekiştirme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 15–25\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] nc, openssl s_client, ssh anahtarlarıyla çalışabiliyorum\n\n**✅ Kanıt / çıktı:** Seviye notları (çözüm yolu, parola yok).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 7/8\n\n**Konu:** Öğrenilenleri CTF mantığıyla pekiştirme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 15–25\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] nc, openssl s_client, ssh anahtarlarıyla çalışabiliyorum\n\n**✅ Kanıt / çıktı:** Seviye notları (çözüm yolu, parola yok).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-3h"
@@ -287,7 +287,7 @@
    "sprint": 2,
    "n": 8,
    "title": "S02·T8 — Sprint retro ve notlar",
-   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-02.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve sistem bilgisi** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-02.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "retro",
     "est-1h"
@@ -297,8 +297,8 @@
   {
    "sprint": 3,
    "n": 1,
-   "title": "S03·T1 — Paket yönetimi",
-   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 1/8\n\n**Konu:** apt/dpkg, repo ve GPG anahtarları, sürüm sabitleme, snap'e bakış.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 16 (2 sa 45 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Package Management\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Paket kurma/kaldırma/arama/hangi pakete ait komutlarını biliyorum\n- [ ] Üçüncü parti repo eklemenin riskini anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Lab: harici repo ekle, paketi kur, sürümü sabitle.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "title": "S03·T1 — Paket yönetimi: pacman (CachyOS) ve apt karşılaştırması",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 1/8\n\n**Konu:** Kurs apt/dpkg anlatıyor, CachyOS'ta pacman/AUR kullanıyorsun: kavramlar aynı, komutlar farklı. Repo, imza anahtarı ve sürüm sabitleme.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 16 (2 sa 45 dk) — kavramlar için izle, komutları pacman ile uygula\n- [ArchWiki · pacman](https://wiki.archlinux.org/title/Pacman)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Package Management\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Paket kurma/kaldırma/arama/hangi pakete ait komutlarını pacman ile biliyorum (karşılığı apt)\n- [ ] AUR'un resmi repodan farkını ve riskini anlatabiliyorum\n- [ ] Paket sürümünü sabitlemeyi (IgnorePkg) deneyip sonucunu anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Lab: paketi kur, dosyalarını listele, sahibini bul, sürümünü sabitle; apt↔pacman tablosu güncellenmiş.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "linux",
     "est-4h"
@@ -1310,7 +1310,7 @@
    "sprint": 14,
    "n": 4,
    "title": "S14·T4 — Proje: Laravel+Vue+Redis+MySQL'i Kubernetes'e taşı",
-   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 4/7\n\n**Konu:** Önceki sprintlerin birleşimi: Deployment, Service, Ingress, StatefulSet, Secret.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Proje bölümü (1 sa 45 dk) + Ek Bilgiler (3 sa 27 dk) ilgili dersler\n- [12-Factor App](https://12factor.net)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Uygulama kümede uçtan uca çalışıyor\n\n**✅ Kanıt / çıktı:** Repoda `k8s/` klasörü ve README.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 4/7\n\n**Konu:** Önceki sprintlerin birleşimi: Deployment, Service, Ingress, StatefulSet, Secret.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Proje bölümü (1 sa 45 dk) + Ek Bilgiler bölümünden yalnızca ilgili dersleri seç (toplam video ~1 sa)\n- [12-Factor App](https://12factor.net)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Uygulama kümede uçtan uca çalışıyor\n\n**✅ Kanıt / çıktı:** Repoda `k8s/` klasörü ve README.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
    "labels": [
     "kubernetes",
     "est-4h"
