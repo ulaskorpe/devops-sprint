@@ -1,0 +1,2035 @@
+{
+ "milestones": [
+  {
+   "no": 1,
+   "title": "Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi",
+   "description": "Hedefler:\n- Çalışan, yedekli bir Linux çalışma ortamı\n- Kabuk, yardım sistemi ve dizin gezintisinde akıcılık\n- Git/GitHub günlük akışı\n\nToplam: 9 görev, ~27 saat (günde 2 saat ≈ 2.2 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 2,
+   "title": "Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler",
+   "description": "Hedefler:\n- Boru hattı (pipe) ile veri işleme: grep/sed/awk\n- Vim ile rahat düzenleme\n- Arşiv, yedek ve sistem bilgisi araçları\n\nToplam: 8 görev, ~23 saat (günde 2 saat ≈ 1.9 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 3,
+   "title": "Sprint 03 — Linux III — sistem yönetimi",
+   "description": "Hedefler:\n- Paket, kullanıcı, izin ve disk yönetimi\n- Süreç ve systemd servis yönetimi\n- Log okuma ve sorun giderme\n\nToplam: 8 görev, ~25 saat (günde 2 saat ≈ 2.1 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 4,
+   "title": "Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting",
+   "description": "Hedefler:\n- TCP/IP, DNS, HTTP/TLS temelleri\n- Firewall ve SSH sertleştirme\n- Güvenilir Bash script yazmak\n\nToplam: 8 görev, ~25 saat (günde 2 saat ≈ 2.1 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 5,
+   "title": "Sprint 05 — Docker derinlemesine",
+   "description": "Hedefler:\n- Image katmanları, multi-stage build ve küçük imajlar\n- Ağ, volume ve Compose üretim desenleri\n- Konteyner güvenliği ve registry\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 6,
+   "title": "Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı",
+   "description": "Hedefler:\n- Nginx reverse proxy + TLS\n- PHP-FPM ayarı ve Laravel üretim kurulumu\n- Veritabanı yedek/geri yükleme\n\nToplam: 8 görev, ~25 saat (günde 2 saat ≈ 2.1 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 7,
+   "title": "Sprint 07 — Redis derinlemesine",
+   "description": "Hedefler:\n- Veri yapıları ve kullanım örüntüleri\n- Kalıcılık, bellek ve eviction\n- Replikasyon, Sentinel ve Cluster\n- Laravel entegrasyonu\n\nToplam: 8 görev, ~23 saat (günde 2 saat ≈ 1.9 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 8,
+   "title": "Sprint 08 — CI/CD — GitLab CI ve GitHub Actions",
+   "description": "Hedefler:\n- Test→build→tara→deploy hattını uçtan uca kurmak\n- Cache, artifact, ortam ve gizli değişken yönetimi\n- İş yerindeki pipeline'a ölçülebilir katkı\n\nToplam: 9 görev, ~26 saat (günde 2 saat ≈ 2.2 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 9,
+   "title": "Sprint 09 — Terraform — Infrastructure as Code",
+   "description": "Hedefler:\n- HCL, state, modül ve workspace\n- AWS'te güvenli hesap kurulumu\n- Terraform için CI ve doğrulama\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 10,
+   "title": "Sprint 10 — AWS çekirdek servisleri",
+   "description": "Hedefler:\n- IAM, VPC, EC2/ASG/ALB, S3, RDS, CloudWatch\n- Üç katmanlı mini ortamı Terraform ile kurmak\n- Maliyet bilinci\n\nToplam: 8 görev, ~25 saat (günde 2 saat ≈ 2.1 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 11,
+   "title": "Sprint 11 — Ansible — yapılandırma yönetimi",
+   "description": "Hedefler:\n- Inventory, playbook, role ve vault\n- Laravel yığınını Ansible ile kurmak\n- Sunucu sertleştirme role'ü\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 12,
+   "title": "Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler",
+   "description": "Hedefler:\n- Mimariyi ve bileşenleri anlamak\n- Yerel kümede Pod/Deployment/Service/Ingress\n- ConfigMap, Secret, probe ve kaynak limitleri\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 13,
+   "title": "Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik",
+   "description": "Hedefler:\n- PV/PVC ve StatefulSet\n- Zamanlama, ağ ve NetworkPolicy\n- RBAC, HPA ve sorun giderme\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 14,
+   "title": "Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular",
+   "description": "Hedefler:\n- Helm ve Kustomize\n- Argo CD ile GitOps\n- Laravel+Vue+Redis+MySQL'i Kubernetes'e taşımak\n- Başvuruya başlamak\n\nToplam: 7 görev, ~23 saat (günde 2 saat ≈ 1.9 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 15,
+   "title": "Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki",
+   "description": "Hedefler:\n- Metrik, log ve alarm hattı\n- SLI/SLO ve runbook\n- Kasıtlı arıza + postmortem\n\nToplam: 8 görev, ~25 saat (günde 2 saat ≈ 2.1 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 16,
+   "title": "Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği",
+   "description": "Hedefler:\n- İzole lab'da saldırı/savunma\n- Linux, imaj ve K8s sertleştirme\n- Secret yönetimi\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 17,
+   "title": "Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı",
+   "description": "Hedefler:\n- ECS/Fargate ve EKS'e giriş\n- Serverless ve olay tabanlı mimari\n- SAA sınavına hazır olmak\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 18,
+   "title": "Sprint 18 — Capstone I — tasarım ve platformu kurmak",
+   "description": "Hedefler:\n- Uçtan uca platformun mimarisi\n- IaC + CI + GitOps + izleme + güvenlik\n\nToplam: 7 görev, ~23 saat (günde 2 saat ≈ 1.9 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 19,
+   "title": "Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon",
+   "description": "Hedefler:\n- Yük ve arıza testleri\n- Yedekten kurtarma\n- Portfolyoya hazır dokümantasyon\n\nToplam: 7 görev, ~22 saat (günde 2 saat ≈ 1.8 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 20,
+   "title": "Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi",
+   "description": "Hedefler:\n- Güçlü CV (EN/TR) ve profil\n- Mülakat hazırlığı\n- AB remote→relocate stratejisi\n\nToplam: 8 görev, ~24 saat (günde 2 saat ≈ 2.0 hafta, haftada 6 gün)."
+  },
+  {
+   "no": 21,
+   "title": "Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)",
+   "description": "Hedefler:\n- DevOps bağlamında Node.js akıcılığı\n- Symfony ve Shopware'e güncel bakış\n\nToplam: 7 görev, ~22 saat (günde 2 saat ≈ 1.8 hafta, haftada 6 gün)."
+  }
+ ],
+ "issues": [
+  {
+   "sprint": 1,
+   "n": 1,
+   "title": "S01·T1 — CachyOS ortamını belgele ve güvenceye al",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 1/9\n\n**Konu:** İş bilgisayarına CachyOS (Arch tabanlı) kuruldu; ortamı tanı, güncelleme disiplinini ve kabuk farkını öğren, SSH/Git'i hazırla.\n\n**⏱ Tahmini süre:** ~2 saat\n\n**📚 Kaynaklar**\n- [CachyOS Wiki](https://wiki.cachyos.org)\n- [ArchWiki](https://wiki.archlinux.org/)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Dağıtımı, çekirdeği, dosya sistemini ve kabuğu komutla gösterebiliyorum (`cat /etc/os-release`, `uname -r`, `findmnt /`, `echo $SHELL`)\n- [ ] Arch'ta güncellemenin `pacman -Syu` ile tüm sistem olarak yapıldığını (kısmi güncelleme yok) ve kurstaki `apt` komutlarının karşılığını biliyorum\n- [ ] Kurs bash anlattığı için kursu bash'te takip ediyorum (varsayılan kabuk fish ise `bash` ile aç)\n- [ ] SSH anahtarı üretilmiş ve GitHub'a eklenmiş, git yapılandırılmış\n- [ ] Neyin nereye yedeklendiğini biliyorum (iş bilgisayarı: şirket politikası geçerli, gizli veri repoya girmez)\n\n**✅ Kanıt / çıktı:** `notes/ortam.md`: sistem bilgisi çıktıları, apt↔pacman eşleme tablosu (5 komut); `ssh -T git@github.com` başarılı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-2h"
+   ],
+   "hours": 2
+  },
+  {
+   "sprint": 1,
+   "n": 2,
+   "title": "S01·T2 — Sistem mimarisi ve kabuğun çalışma şekli",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 2/9\n\n**Konu:** Kernel/userspace, dosya sistemi hiyerarşisi (FHS), kabuk, PATH ve ortam değişkenleri.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 4 (kalan 7 ders) + Bölüm 5 (1 sa 16 dk)\n- [Linux Journey](https://linuxjourney.com) → Grasshopper bölümü\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] /etc, /var, /usr, /home, /proc ne işe yarar anlatabiliyorum\n- [ ] PATH ve `export` farkını gösterebiliyorum\n- [ ] Bir komutun nasıl bulunup çalıştırıldığını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** `notes/linux-fhs.md`: dizin haritası + 5 cümlelik kabuk açıklaması.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 1,
+   "n": 3,
+   "title": "S01·T3 — Kısayollar ve yardım sistemi",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 3/9\n\n**Konu:** Readline kısayolları, history, man/info, tldr ile kendi kendine öğrenme. (Kurs bash anlatıyor; CachyOS'ta varsayılan kabuk fish olabilir, `!!` gibi bash kısayolları fish'te çalışmaz → bu görevi `bash` oturumunda yap.)\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 6 (1 sa 11 dk) + Bölüm 7 (1 sa 17 dk)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Ctrl+R, !!, !$, alias gibi kısayolları refleks olarak kullanıyorum\n- [ ] Bilmediğim komutun man sayfasını okuyup örnek çıkarabiliyorum\n\n**✅ Kanıt / çıktı:** `.bashrc` içinde 5 alias + 1 fonksiyon (commit'lenmiş dotfiles).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 1,
+   "n": 4,
+   "title": "S01·T4 — Dizinlerde gezinti",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 4/9\n\n**Konu:** cd/ls/pwd/tree/find temelleri, mutlak-göreli yol, gizli dosyalar.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 8 (3 sa 32 dk)\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 0–5\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Dosya sisteminde ezbersiz gezinebiliyorum\n- [ ] Bandit 0–5 seviyelerini çözdüm\n\n**✅ Kanıt / çıktı:** Bandit notları (parolaları yazma!) — hangi komutu neden kullandığını yaz.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 1,
+   "n": 5,
+   "title": "S01·T5 — Joker karakterler ve kabuk genişletmeleri",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 5/9\n\n**Konu:** Globbing, brace expansion, quoting kuralları (tek/çift tırnak).\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 9 (2 sa 5 dk)\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 5–10\n- [BashGuide](https://mywiki.wooledge.org/BashGuide) → Quotes ve Expansion bölümleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `*`, `?`, `[]`, `{}` farkını gösterebiliyorum\n- [ ] Tırnakların neden önemli olduğunu örnekle anlatabiliyorum\n\n**✅ Kanıt / çıktı:** 10 satırlık 'quoting tuzakları' örnek listesi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 1,
+   "n": 6,
+   "title": "S01·T6 — Dosya işlemleri ve bağlantılar",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 6/9\n\n**Konu:** cp/mv/rm, hard link ve symbolic link, inode kavramı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 12 (1 sa 23 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → File Manipulation bölümü\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Hard link ile symlink farkını `ls -li` ile gösterebiliyorum\n- [ ] `rm -rf` öncesi güvenli alışkanlıklarım var\n\n**✅ Kanıt / çıktı:** Lab: iki link türüyle deney ve gözlem notu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 1,
+   "n": 7,
+   "title": "S01·T7 — Git temelleri ve GitHub akışı",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 7/9\n\n**Konu:** Commit, branch, merge, rebase, pull request akışı.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Pro Git (kitap)](https://git-scm.com/book) → Bölüm 1–3\n- [Learn Git Branching](https://learngitbranching.js.org)\n- YouTube (arama): [Git ve GitHub eğitimi Türkçe](https://www.youtube.com/results?search_query=Git+ve+GitHub+e%C4%9Fitimi+T%C3%BCrk%C3%A7e)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Branch açıp PR ile birleştirebiliyorum\n- [ ] Merge ile rebase farkını anlatabiliyorum\n- [ ] Çakışma çözebiliyorum\n\n**✅ Kanıt / çıktı:** devops-sprint reposunda `notes/` klasörü + 1 PR.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "git",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 1,
+   "n": 8,
+   "title": "S01·T8 — Makineyi test sunucusuna çevir: Nginx + MariaDB",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 8/9\n\n**Konu:** İş bilgisayarına (CachyOS) host üzerinde Nginx ve MariaDB kur, systemd ile yönet; ekibin Docker projeleriyle port çakışmasını yönet.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [ArchWiki · Nginx](https://wiki.archlinux.org/title/Nginx)\n- [ArchWiki · MariaDB](https://wiki.archlinux.org/title/MariaDB)\n- Önce Sprint 1'de öğrendiğin komutları (dizin, izin, dosya işlemleri) kullan; servis yönetimini (systemd) Sprint 3'te derinleştireceksin\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Nginx kurulu; `systemctl enable --now nginx` ile açılıp `curl -I localhost` yanıt veriyor\n- [ ] MariaDB veri dizini ilk kurulumda hazırlanmış (ArchWiki adımları), `mariadb-secure-installation` yapılmış, uygulama için en az yetkili kullanıcı oluşturulmuş\n- [ ] Ekibin Docker projeleri 80/3306 kullanıyorsa çakışmayı çözdüm (host servislerini farklı porta aldım ya da gerektiğinde durdurup başlatıyorum)\n- [ ] Servisleri dışarıya açmadığımı (yalnızca localhost veya izinli ağ) doğruladım; iş ağı/IT politikasını kontrol ettim\n- [ ] Hepsini nasıl kaldıracağımı (rollback) not ettim\n\n**✅ Kanıt / çıktı:** `notes/server-setup.md`: kurulan paketler, portlar, komutlar, geri alma adımları; `ss -tlnp` çıktısı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "web",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 1,
+   "n": 9,
+   "title": "S01·T9 — Sprint retro ve notlar",
+   "body": "> **Sprint 01 — Linux I — ortam, kabuk ve dosya sistemi** · Görev 9/9\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-01.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 2,
+   "n": 1,
+   "title": "S02·T1 — Metin verilerini işlemek",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 1/8\n\n**Konu:** cat/less/head/tail/wc/sort/uniq/cut/tr, yönlendirme ve boru hattı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 10 (1 sa 56 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Redirection ve Pipelines\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] stdout/stderr/stdin farkını ve `2>&1` anlamını biliyorum\n- [ ] Boru hattıyla 3+ komutu zincirleyebiliyorum\n\n**✅ Kanıt / çıktı:** Bir log dosyasından en sık geçen 10 IP'yi tek satırda çıkaran komut.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 2,
+   "n": 2,
+   "title": "S02·T2 — Metinleri filtrelemek: grep, regex, find",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 2/8\n\n**Konu:** grep -E, düzenli ifadeler, find ile -exec/xargs.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 11\n- [regex101](https://regex101.com)\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 10–15\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Temel regex yazabiliyorum\n- [ ] find + xargs ile toplu işlem yapabiliyorum\n\n**✅ Kanıt / çıktı:** 5 regex alıştırması çözümüyle birlikte `notes/regex.md`.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 2,
+   "n": 3,
+   "title": "S02·T3 — sed ve awk",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 3/8\n\n**Konu:** Satır düzenleme (sed), sütun/alan işleme (awk).\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [sed ve awk ile metin işleme eğitimi](https://www.youtube.com/results?search_query=sed+ve+awk+ile+metin+i%C5%9Fleme+e%C4%9Fitimi)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Text Processing\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `sed s///` ile toplu değiştirme yapabiliyorum\n- [ ] awk ile sütun toplayabiliyorum\n\n**✅ Kanıt / çıktı:** Access-log'dan durum koduna göre sayım yapan awk tek satırı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 2,
+   "n": 4,
+   "title": "S02·T4 — Vim ve nano",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 4/8\n\n**Konu:** Vim modları, hareket, arama-değiştirme, vimtutor.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 13 (46 dk)\n- Terminalde `vimtutor` (2 tur)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Fare olmadan Vim'de dosya açıp düzenleyip kaydedebiliyorum\n- [ ] Arama ve toplu değiştirme yapabiliyorum\n\n**✅ Kanıt / çıktı:** vimtutor tamamlandı; `.vimrc` temel ayarlar.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 2,
+   "n": 5,
+   "title": "S02·T5 — Arşivleme, sıkıştırma ve rsync",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 5/8\n\n**Konu:** tar, gzip/zstd, rsync ile artımlı yedek.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 14 (2 sa 20 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Archiving and Backup\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] tar ile oluştur/listele/aç yapabiliyorum\n- [ ] rsync ile artımlı yedek alabiliyorum\n\n**✅ Kanıt / çıktı:** `backup.sh` ilk sürümü (rsync + tarih damgalı arşiv).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 2,
+   "n": 6,
+   "title": "S02·T6 — Sistem bilgisi araçları",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 6/8\n\n**Konu:** uname, lscpu, free, df/du, lsblk, lsof, ss, dmesg.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 15 (1 sa 10 dk)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir makinenin CPU/RAM/disk/ağ durumunu 5 komutla çıkarabiliyorum\n- [ ] Disk dolduğunda hangi dizinin şişirdiğini bulabiliyorum\n\n**✅ Kanıt / çıktı:** `sysinfo.sh`: tek ekranlık sistem özeti.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 2,
+   "n": 7,
+   "title": "S02·T7 — Bandit ile pratik: ağ ve SSH seviyeleri",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 7/8\n\n**Konu:** Öğrenilenleri CTF mantığıyla pekiştirme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [OverTheWire · Bandit](https://overthewire.org/wargames/bandit/) → Level 15–25\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] nc, openssl s_client, ssh anahtarlarıyla çalışabiliyorum\n\n**✅ Kanıt / çıktı:** Seviye notları (çözüm yolu, parola yok).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 2,
+   "n": 8,
+   "title": "S02·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 02 — Linux II — metin işleme, editör, arşiv ve izinler** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-02.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 3,
+   "n": 1,
+   "title": "S03·T1 — Paket yönetimi",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 1/8\n\n**Konu:** apt/dpkg, repo ve GPG anahtarları, sürüm sabitleme, snap'e bakış.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 16 (2 sa 45 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Package Management\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Paket kurma/kaldırma/arama/hangi pakete ait komutlarını biliyorum\n- [ ] Üçüncü parti repo eklemenin riskini anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Lab: harici repo ekle, paketi kur, sürümü sabitle.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 3,
+   "n": 2,
+   "title": "S03·T2 — Kullanıcı ve grup yönetimi",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 2/8\n\n**Konu:** useradd/usermod, /etc/passwd-shadow, sudoers, grup üyeliği.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 17 (3 sa 5 dk)\n- [Linux Journey](https://linuxjourney.com) → Users and Groups\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kısıtlı yetkili servis kullanıcısı oluşturabiliyorum\n- [ ] `visudo` ile güvenli sudo kuralı yazabiliyorum\n\n**✅ Kanıt / çıktı:** Lab: `deploy` kullanıcısı, yalnızca belirli komutlara sudo.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 3,
+   "n": 3,
+   "title": "S03·T3 — Dosya izinleri, ACL ve özel bitler",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 3/8\n\n**Konu:** chmod/chown/umask, setuid/setgid/sticky, ACL.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Linux Journey](https://linuxjourney.com) → File Permissions\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Permissions\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sayısal ve sembolik izinleri okuyabiliyorum\n- [ ] Paylaşımlı dizin için setgid + ACL tasarlayabiliyorum\n\n**✅ Kanıt / çıktı:** İzin bulmacası: 5 senaryo, çözümleriyle.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 3,
+   "n": 4,
+   "title": "S03·T4 — Disk yönetimi: bölüm, dosya sistemi, mount, LVM",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 4/8\n\n**Konu:** fdisk/parted, mkfs, fstab, LVM, inode. Gerçek diske dokunmadan loop device ile çalış.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 18 (2 sa 50 dk)\n- [Linux Journey](https://linuxjourney.com) → Disk bölümleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Loop disk üzerinde bölüm, dosya sistemi, mount ve fstab ayarını yapabiliyorum\n- [ ] LVM'de birim büyütebiliyorum\n\n**✅ Kanıt / çıktı:** Lab günlüğü: loop device + LVM genişletme adımları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 3,
+   "n": 5,
+   "title": "S03·T5 — Süreç yönetimi",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 5/8\n\n**Konu:** ps/top/htop, sinyaller, nice, jobs, cgroups'a giriş.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 19 (1 sa 22 dk)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Takılı bir süreci güvenle sonlandırabiliyorum (SIGTERM→SIGKILL sırası)\n- [ ] CPU/RAM yiyen süreci bulup sınırlayabiliyorum\n\n**✅ Kanıt / çıktı:** Lab: sonsuz döngü script'i ve `nice`/`cpulimit` ile deney.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 3,
+   "n": 6,
+   "title": "S03·T6 — systemd: servis ve zamanlayıcı yazmak",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 6/8\n\n**Konu:** unit dosyası, enable/start, bağımlılıklar, timer.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 20 (1 sa 9 dk)\n- YouTube (arama): [systemd unit file ve timer eğitimi](https://www.youtube.com/results?search_query=systemd+unit+file+ve+timer+e%C4%9Fitimi)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kendi script'im için unit dosyası yazabiliyorum\n- [ ] Cron yerine systemd timer kurabiliyorum\n\n**✅ Kanıt / çıktı:** `backup.service` + `backup.timer` (Sprint 2'deki script).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 3,
+   "n": 7,
+   "title": "S03·T7 — Log yönetimi: journald, rsyslog, logrotate",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 7/8\n\n**Konu:** journalctl filtreleri, /var/log yapısı, logrotate.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 21 (1 sa 20 dk)\n- [Linux Journey](https://linuxjourney.com) → Logs\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `journalctl -u … --since` ile servis loglarını inceleyebiliyorum\n- [ ] logrotate kuralı yazabiliyorum\n\n**✅ Kanıt / çıktı:** Arızalı bir servisi (bilerek bozulmuş) loglardan teşhis eden not.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "linux",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 3,
+   "n": 8,
+   "title": "S03·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 03 — Linux III — sistem yönetimi** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-03.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 4,
+   "n": 1,
+   "title": "S04·T1 — Ağ temelleri: OSI, TCP/IP, IP ve alt ağlar",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 1/8\n\n**Konu:** Katmanlar, IPv4 adresleme, subnet/CIDR, ARP, NAT.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 22 (Temel Ağ Eğitimi)\n- [Practical Networking](https://www.practicalnetworking.net/) → Networking Fundamentals\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] /24 ve /16 ne demek, bir ağda kaç host olur hesaplayabiliyorum\n- [ ] Paketin ev ağından internete yolculuğunu anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Elle subnet hesabı: 5 alıştırma.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "network",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 4,
+   "n": 2,
+   "title": "S04·T2 — Ağ komutları",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 2/8\n\n**Konu:** ip, ss, ping, traceroute, dig, curl, nc, tcpdump.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Linux (Kali) kursu — Bölüm 23 (2 sa 35 dk)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Networking\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir servisin dinleyip dinlemediğini `ss` ile görebiliyorum\n- [ ] `tcpdump` ile bir HTTP isteğini yakalayıp okuyabiliyorum\n\n**✅ Kanıt / çıktı:** Lab: curl isteğinin tcpdump çıktısıyla açıklaması.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "network",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 4,
+   "n": 3,
+   "title": "S04·T3 — DNS, HTTP ve TLS derinlemesine",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 3/8\n\n**Konu:** Kayıt türleri, çözümleme zinciri, HTTP başlıkları, TLS el sıkışması.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [How DNS Works](https://howdns.works)\n- `dig +trace`, `curl -v`, `openssl s_client` ile deney\n- YouTube (arama): [TLS handshake explained](https://www.youtube.com/results?search_query=TLS+handshake+explained)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir alan adının nasıl çözüldüğünü adım adım anlatabiliyorum\n- [ ] Sertifika zincirini komut satırından okuyabiliyorum\n\n**✅ Kanıt / çıktı:** Bir sitenin DNS+TLS raporu (notes/).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "network",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 4,
+   "n": 4,
+   "title": "S04·T4 — Güvenlik duvarı: ufw ve nftables",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 4/8\n\n**Konu:** Varsayılan reddet politikası, port açma, NAT/yönlendirme temeli.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Linux Journey](https://linuxjourney.com) → Networking\n- YouTube (arama): [nftables tutorial](https://www.youtube.com/results?search_query=nftables+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Varsayılan-reddet kuralı kurup yalnızca SSH/HTTP açabiliyorum\n- [ ] Kuralları kalıcı yapabiliyorum\n\n**✅ Kanıt / çıktı:** VM üzerinde firewall kural seti (dosya olarak repoda).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "network",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 4,
+   "n": 5,
+   "title": "S04·T5 — SSH'ı sertleştirmek ve tünelleme",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 5/8\n\n**Konu:** Anahtar kimlik doğrulama, sshd_config, ssh config, port yönlendirme, jump host, fail2ban.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [SSH config ve port forwarding eğitimi](https://www.youtube.com/results?search_query=SSH+config+ve+port+forwarding+e%C4%9Fitimi)\n- [Linux Journey](https://linuxjourney.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Parola girişini kapatıp yalnızca anahtarla girebiliyorum\n- [ ] ProxyJump ve local/remote forward kullanabiliyorum\n\n**✅ Kanıt / çıktı:** `~/.ssh/config` örneği + sshd_config sertleştirme listesi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "network",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 4,
+   "n": 6,
+   "title": "S04·T6 — Bash scripting I: temeller",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 6/8\n\n**Konu:** Değişkenler, koşullar, döngüler, fonksiyonlar, `set -euo pipefail`.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [BashGuide](https://mywiki.wooledge.org/BashGuide)\n- shellcheck ile kontrol\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Hata yönetimli temel script yazabiliyorum\n- [ ] shellcheck uyarılarını anlayıp düzeltebiliyorum\n\n**✅ Kanıt / çıktı:** 3 küçük script: log temizleyici, port kontrol, dosya yedekleyici.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "scripting",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 4,
+   "n": 7,
+   "title": "S04·T7 — Bash scripting II: gerçek bir operasyon script'i",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 7/8\n\n**Konu:** Argüman ayrıştırma, trap, loglama, idempotent tasarım.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [BashGuide](https://mywiki.wooledge.org/BashGuide)\n- [The Linux Command Line (ücretsiz kitap)](https://linuxcommand.org/tlcl.php) → Writing Shell Scripts\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Argüman alan, loglayan, hata durumunda temizlik yapan script yazabiliyorum\n\n**✅ Kanıt / çıktı:** `healthcheck.sh`: servis durumu + disk + sertifika süresi kontrolü, systemd timer ile çalışır.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "scripting",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 4,
+   "n": 8,
+   "title": "S04·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 04 — Ağ, güvenlik duvarı ve Bash scripting** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-04.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 5,
+   "n": 1,
+   "title": "S05·T1 — Docker kursunu bitir",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 1/8\n\n**Konu:** Kalan dersleri tamamla; Swarm'ı sadece tanımak için hızlı geç.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Docker kursu — Bölüm 3 (Container 101, kalan 8 ders)\n- Udemy · Docker kursu — Bölüm 6 Swarm kısmını 1.5x hızda; orkestrasyon için asıl hedef Kubernetes\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kursun tüm bölümleri işaretli\n- [ ] Swarm ile Kubernetes'in rolünü karşılaştırabiliyorum\n\n**✅ Kanıt / çıktı:** Kısa not: Swarm vs Kubernetes (5 cümle).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "docker",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 5,
+   "n": 2,
+   "title": "S05·T2 — Image iç yapısı ve build cache",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 2/8\n\n**Konu:** Katmanlar, cache davranışı, .dockerignore, BuildKit.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/) → Build → Best practices\n- YouTube (arama): [Docker image layers explained](https://www.youtube.com/results?search_query=Docker+image+layers+explained)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `docker history` okuyup katman boyutlarını yorumlayabiliyorum\n- [ ] Cache'i bozmayan Dockerfile sıralaması yazabiliyorum\n\n**✅ Kanıt / çıktı:** Aynı uygulamanın kötü vs iyi Dockerfile'ı ve build süreleri.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "docker",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 5,
+   "n": 3,
+   "title": "S05·T3 — Multi-stage build ve küçük imaj",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 3/8\n\n**Konu:** Laravel (PHP-FPM) ve Vue (node→nginx) için multi-stage Dockerfile.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/) → Build → Multi-stage\n- Kendi Laravel+Vue projen (EVOS ya da başka)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Build aracı ile çalışma imajını ayırabiliyorum\n- [ ] İmaj boyutunu en az %50 küçültüp ölçebiliyorum\n\n**✅ Kanıt / çıktı:** Önce/sonra boyut tablosu README'de.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "docker",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 5,
+   "n": 4,
+   "title": "S05·T4 — Ağ ve volume derinlemesine",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 4/8\n\n**Konu:** bridge/host/macvlan, kullanıcı tanımlı ağlar, bind mount vs volume, volume yedekleme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/) → Engine → Networking ve Storage\n- Udemy · Docker kursu — Bölüm 5 ilgili dersler\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Konteynerlerin birbirini DNS adıyla bulmasını açıklayabiliyorum\n- [ ] Volume'ü yedekleyip geri yükleyebiliyorum\n\n**✅ Kanıt / çıktı:** Lab: iki ağlı topoloji + volume yedek script'i.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "docker",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 5,
+   "n": 5,
+   "title": "S05·T5 — Compose ile üretime yakın yığın",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 5/8\n\n**Konu:** healthcheck, depends_on koşulları, profiles, env/secrets, override dosyaları.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/) → Compose\n- Udemy · Docker kursu — Bölüm 6 Compose dersleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Web+PHP-FPM+MySQL+Redis yığınını tek `compose.yaml` ile kaldırabiliyorum\n- [ ] Sağlıksız servisi healthcheck ile tespit edebiliyorum\n\n**✅ Kanıt / çıktı:** Repoda çalışan `compose.yaml` + README'de çalıştırma adımları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "docker",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 5,
+   "n": 6,
+   "title": "S05·T6 — Konteyner güvenliği",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 6/8\n\n**Konu:** Root olmayan kullanıcı, read-only dosya sistemi, capability'ler, rootless, Trivy ve hadolint.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/) → Engine → Security\n- [Trivy](https://trivy.dev)\n- YouTube (arama): [Docker security best practices](https://www.youtube.com/results?search_query=Docker+security+best+practices)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] İmajı non-root çalıştırabiliyorum\n- [ ] Trivy ile imaj açıklarını tarayıp yorumlayabiliyorum\n\n**✅ Kanıt / çıktı:** Trivy raporu + düzeltme sonrası karşılaştırma.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 5,
+   "n": 7,
+   "title": "S05·T7 — Registry ve imaj dağıtımı",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 7/8\n\n**Konu:** GHCR/Docker Hub, etiketleme stratejisi, yerel registry.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/) → Registry\n- YouTube (arama): [GitHub Container Registry docker push](https://www.youtube.com/results?search_query=GitHub+Container+Registry+docker+push)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] İmajı GHCR'ye etiketleyip push/pull yapabiliyorum\n- [ ] `latest` kullanmanın riskini anlatabiliyorum\n\n**✅ Kanıt / çıktı:** İmaj GHCR'de, etiket stratejisi README'de.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "docker",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 5,
+   "n": 8,
+   "title": "S05·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 05 — Docker derinlemesine** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-05.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 6,
+   "n": 1,
+   "title": "S06·T1 — Nginx temelleri",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 1/8\n\n**Konu:** server/location blokları, statik içerik, log formatı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Nginx Docs](https://nginx.org/en/docs/) → Beginner's Guide\n- YouTube (arama): [Nginx crash course](https://www.youtube.com/results?search_query=Nginx+crash+course)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Basit bir siteyi Nginx ile yayınlayabiliyorum\n- [ ] Erişim ve hata loglarını okuyabiliyorum\n\n**✅ Kanıt / çıktı:** Nginx yapılandırması repoda.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "web",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 6,
+   "n": 2,
+   "title": "S06·T2 — Nginx: reverse proxy, load balancing, cache",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 2/8\n\n**Konu:** proxy_pass, upstream, gzip, başlıklar, rate limit.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Nginx Docs](https://nginx.org/en/docs/) → Admin Guide (Load Balancer, Reverse Proxy)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] İki arka uç arasında yük dağıtabiliyorum\n- [ ] Rate limit uygulayıp test edebiliyorum\n\n**✅ Kanıt / çıktı:** Lab: 2 konteyner + Nginx upstream, `ab`/`wrk` ile deney.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "web",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 6,
+   "n": 3,
+   "title": "S06·T3 — TLS ve HTTPS",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 3/8\n\n**Konu:** Let's Encrypt/certbot, yerelde mkcert, HSTS, güvenli TLS ayarı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Certbot](https://certbot.eff.org)\n- YouTube (arama): [Let's Encrypt certbot nginx](https://www.youtube.com/results?search_query=Let%27s+Encrypt+certbot+nginx)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir alan adına otomatik yenilenen sertifika kurabiliyorum (ya da yerelde mkcert)\n- [ ] HSTS ve TLS sürümü ayarını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** HTTPS çalışan test sitesi, ekran görüntüsü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "web",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 6,
+   "n": 4,
+   "title": "S06·T4 — PHP-FPM ve Laravel üretim ayarları",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 4/8\n\n**Konu:** pm.* ayarları, opcache, slowlog, Laravel optimize komutları.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Doküman yolu: php.net → Manual → FastCGI Process Manager (FPM)\n- [12-Factor App](https://12factor.net)\n- YouTube (arama): [PHP-FPM tuning pm.max_children](https://www.youtube.com/results?search_query=PHP-FPM+tuning+pm.max_children)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `pm.max_children` değerini RAM'e göre hesaplayabiliyorum\n- [ ] Opcache'in etkisini ölçebiliyorum\n\n**✅ Kanıt / çıktı:** Önce/sonra yük testi sonuçları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "web",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 6,
+   "n": 5,
+   "title": "S06·T5 — MySQL/MariaDB operasyonu",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 5/8\n\n**Konu:** Kullanıcı/yetki, mysqldump, slow query log, indeks ve EXPLAIN.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Doküman yolu: dev.mysql.com → Reference Manual → Backup and Recovery\n- YouTube (arama): [MySQL slow query log EXPLAIN tutorial](https://www.youtube.com/results?search_query=MySQL+slow+query+log+EXPLAIN+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] En az yetkiyle uygulama kullanıcısı oluşturabiliyorum\n- [ ] Yavaş sorguyu bulup indeksle hızlandırabiliyorum\n\n**✅ Kanıt / çıktı:** Bir yavaş sorgunun EXPLAIN karşılaştırması.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "database",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 6,
+   "n": 6,
+   "title": "S06·T6 — Yedekleme ve geri yükleme tatbikatı",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 6/8\n\n**Konu:** DB + dosya yedeği, zamanlama, geri yükleme testi.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Sprint 2-3'teki backup script ve systemd timer\n- YouTube (arama): [mysqldump backup restore automation](https://www.youtube.com/results?search_query=mysqldump+backup+restore+automation)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Yedeğin geri yüklenebildiğini kanıtlayabiliyorum\n- [ ] RPO/RTO kavramlarını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** Silinmiş veritabanını yedekten geri getiren tatbikat notu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "database",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 6,
+   "n": 7,
+   "title": "S06·T7 — Laravel'i boş bir sunucuya elle üretime almak",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 7/8\n\n**Konu:** VM'de Nginx+PHP-FPM+DB+queue worker+TLS ile uçtan uca kurulum.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Önceki 6 görevin birleşimi\n- [12-Factor App](https://12factor.net)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sıfırdan kurulu bir VM'de Laravel uygulamasını çalıştırabiliyorum\n- [ ] Bu kurulumun otomasyon adaylarını (Ansible) listeleyebiliyorum\n\n**✅ Kanıt / çıktı:** Kurulum adımları `notes/laravel-prod-manual.md`; Sprint 11'de Ansible'a çevrilecek.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "web",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 6,
+   "n": 8,
+   "title": "S06·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 06 — Web sunucu yığını: Nginx, PHP-FPM, TLS ve veritabanı** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-06.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 7,
+   "n": 1,
+   "title": "S07·T1 — Redis veri yapıları I: string, hash, list, set",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 1/8\n\n**Konu:** Temel veri tipleri ve komutları, TTL.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Redis Docs](https://redis.io/docs/) → Develop → Data types\n- [Redis University](https://university.redis.io)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Her tipi hangi problemde kullanacağımı açıklayabiliyorum\n- [ ] TTL ve atomik komutları (INCR) kullanabiliyorum\n\n**✅ Kanıt / çıktı:** `redis-cli` oturum notları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 7,
+   "n": 2,
+   "title": "S07·T2 — Redis veri yapıları II: sorted set, stream, pub/sub",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 2/8\n\n**Konu:** Sorted set, stream, bitmap, HyperLogLog; rate limit ve leaderboard örüntüleri.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Redis Docs](https://redis.io/docs/) → Develop → Data types\n- YouTube (arama): [Redis streams tutorial](https://www.youtube.com/results?search_query=Redis+streams+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Rate limiter ve leaderboard tasarlayabiliyorum\n- [ ] Pub/Sub ile Streams farkını anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Küçük bir leaderboard + rate limit script'i.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 7,
+   "n": 3,
+   "title": "S07·T3 — Kalıcılık: RDB ve AOF",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 3/8\n\n**Konu:** Snapshot, append-only dosya, fsync politikası, veri kaybı senaryoları.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Redis Docs](https://redis.io/docs/) → Operate → Persistence\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] RDB ve AOF'in trade-off'unu anlatabiliyorum\n- [ ] Süreci öldürüp kayıp penceresini ölçebiliyorum\n\n**✅ Kanıt / çıktı:** Deney: `kill -9` sonrası kaç yazma kayboldu tablosu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 7,
+   "n": 4,
+   "title": "S07·T4 — Bellek yönetimi ve eviction",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 4/8\n\n**Konu:** maxmemory, eviction politikaları, büyük anahtarlar, `SCAN` vs `KEYS`.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Redis Docs](https://redis.io/docs/) → Operate → Eviction ve Memory optimization\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Eviction politikasını iş yüküne göre seçebiliyorum\n- [ ] Büyük anahtarı bulup yönetebiliyorum\n\n**✅ Kanıt / çıktı:** `MEMORY USAGE` ve `--bigkeys` raporu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 7,
+   "n": 5,
+   "title": "S07·T5 — Replikasyon ve Sentinel",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 5/8\n\n**Konu:** 1 master + 2 replica + 3 sentinel; failover testi.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Redis Docs](https://redis.io/docs/) → Operate → Replication ve Sentinel\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Master'ı düşürüp otomatik failover'ı gözlemleyebiliyorum\n- [ ] İstemcinin Sentinel ile nasıl bağlandığını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** Compose ile Sentinel kümesi repoda + failover günlüğü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 7,
+   "n": 6,
+   "title": "S07·T6 — Redis Cluster'a giriş",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 6/8\n\n**Konu:** Hash slot, 6 düğümlü küme, yeniden dağıtım.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Redis Docs](https://redis.io/docs/) → Operate → Scaling (Cluster)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Slot kavramını ve çok-anahtarlı komut kısıtını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** 6 düğümlü yerel küme + `redis-cli --cluster` çıktıları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 7,
+   "n": 7,
+   "title": "S07·T7 — Laravel + Redis: cache, session, queue, Horizon, kilitler",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 7/8\n\n**Konu:** Üretimde Redis kullanım desenleri ve ölçüm.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Laravel Docs → Redis, Queues, Horizon\n- `redis-benchmark`\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Cache/queue/session için ayrı DB veya prefix stratejisi kurabiliyorum\n- [ ] Atomik kilit (Cache::lock) kullanabiliyorum\n\n**✅ Kanıt / çıktı:** Laravel örneği + benchmark sonuçları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "redis",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 7,
+   "n": 8,
+   "title": "S07·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 07 — Redis derinlemesine** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-07.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 8,
+   "n": 1,
+   "title": "S08·T1 — CI/CD kavramları ve GitLab CI'a giriş",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 1/9\n\n**Konu:** Pipeline, stage, job, runner; ilk .gitlab-ci.yml.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube: [GitLab CI CD Tutorial for Beginners [Crash Course] — TechWorld with Nana](https://www.youtube.com/watch?v=qP8kir2GUgo)\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/) → Quick start\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] CI ile CD farkını anlatabiliyorum\n- [ ] GitLab.com'da ilk pipeline'ımı çalıştırdım\n\n**✅ Kanıt / çıktı:** GitLab.com'da çalışan basit pipeline.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 8,
+   "n": 2,
+   "title": "S08·T2 — .gitlab-ci.yml derinlemesine",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 2/9\n\n**Konu:** rules, needs, cache, artifacts, variables, environments, include/extends.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/) → CI/CD YAML syntax reference\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Gereksiz job'ları `rules` ile eleyebiliyorum\n- [ ] Cache ile artifact farkını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** Cache'li ve paralel job'lu pipeline; süre karşılaştırması.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 8,
+   "n": 3,
+   "title": "S08·T3 — CI içinde Docker build",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 3/9\n\n**Konu:** Docker-in-Docker, kaniko/BuildKit, registry'ye push, katman cache'i.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/) → Build Docker images\n- [Docker Docs](https://docs.docker.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pipeline'dan imajı build edip registry'ye gönderebiliyorum\n\n**✅ Kanıt / çıktı:** İmajı etiketleyen ve registry'ye iten job.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 8,
+   "n": 4,
+   "title": "S08·T4 — Laravel + Vue için tam CI",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 4/9\n\n**Konu:** Composer/npm cache, phpunit, pint/phpstan, frontend build.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/)\n- Kendi Laravel+Vue projen\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Test ve lint başarısız olursa pipeline'ın durduğunu doğruladım\n\n**✅ Kanıt / çıktı:** Yeşil/kırmızı pipeline ekran görüntüleri.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 8,
+   "n": 5,
+   "title": "S08·T5 — Deploy stratejileri",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 5/9\n\n**Konu:** SSH/rsync deploy, rolling ve blue-green (Compose üzerinde), manuel onay, geri alma.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [blue green deployment explained](https://www.youtube.com/results?search_query=blue+green+deployment+explained)\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/) → Environments\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Blue-green ile sıfır kesintiye yakın deploy yapabiliyorum\n- [ ] Tek tıkla geri alabiliyorum\n\n**✅ Kanıt / çıktı:** Deploy + rollback senaryosunun video/gif'i veya log'u.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 8,
+   "n": 6,
+   "title": "S08·T6 — Pipeline güvenliği",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 6/9\n\n**Konu:** Trivy, gitleaks, semgrep, korumalı değişkenler, kısa ömürlü kimlik bilgileri.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Trivy](https://trivy.dev)\n- YouTube (arama): [gitleaks semgrep GitLab CI](https://www.youtube.com/results?search_query=gitleaks+semgrep+GitLab+CI)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pipeline'da secret ve açık taraması çalışıyor\n- [ ] Gizli değişkeni loga sızdırmamayı biliyorum\n\n**✅ Kanıt / çıktı:** Güvenlik tarama job'ları + bulgu özeti.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 8,
+   "n": 7,
+   "title": "S08·T7 — GitHub Actions: aynı pipeline'ı taşı",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 7/9\n\n**Konu:** Workflow, matrix, cache, GHCR'ye push, environments.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [GitHub Actions Docs](https://docs.github.com/en/actions)\n- YouTube (arama): [GitHub Actions tutorial Docker CI CD pipeline](https://www.youtube.com/results?search_query=GitHub+Actions+tutorial+Docker+CI+CD+pipeline)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Aynı süreci GitHub Actions ile kurabiliyorum\n- [ ] İki sistemin farklarını sıralayabiliyorum\n\n**✅ Kanıt / çıktı:** `.github/workflows/` portfolyo reposunda.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 8,
+   "n": 8,
+   "title": "S08·T8 — İş yerinde pipeline iyileştirmesi",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 8/9\n\n**Konu:** Mevcut GitLab pipeline'ında süre/cache/imaj boyutu ölç; 1 somut iyileştirme öner veya uygula.\n\n**⏱ Tahmini süre:** ~2 saat\n\n**📚 Kaynaklar**\n- Ekip içi görüşme + mevcut pipeline\n- Öncesi/sonrası süreyi ölç\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Ölçülebilir bir iyileştirme cümlem var (ör. pipeline süresi X'ten Y'ye)\n\n**✅ Kanıt / çıktı:** CV için 1 satırlık sonuç cümlesi (gizli bilgi içermeden).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-2h"
+   ],
+   "hours": 2
+  },
+  {
+   "sprint": 8,
+   "n": 9,
+   "title": "S08·T9 — Sprint retro ve notlar",
+   "body": "> **Sprint 08 — CI/CD — GitLab CI ve GitHub Actions** · Görev 9/9\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-08.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 9,
+   "n": 1,
+   "title": "S09·T1 — Terraform kurulumu ve temel kavramlar",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 1/8\n\n**Konu:** provider, resource, plan/apply/destroy; önce Docker provider ile yerelde çalış.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Terraform + AWS kursu — Kurulum + Terraform Temelleri (56 dk) bölümleri\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] plan/apply/destroy döngüsünü anlıyorum\n- [ ] Yerelde Docker konteyneri Terraform ile oluşturdum\n\n**✅ Kanıt / çıktı:** Çalışan ilk `main.tf` repoda.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 9,
+   "n": 2,
+   "title": "S09·T2 — HCL derinlemesine",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 2/8\n\n**Konu:** variable/output/locals, count/for_each, dynamic, fonksiyonlar.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials)\n- YouTube: [Terraform Course - Automate your AWS cloud infrastructure — freeCodeCamp](https://www.youtube.com/watch?v=SLB_c_ayRMo)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] `for_each` ile birden çok kaynak üretebiliyorum\n- [ ] Değişken doğrulaması yazabiliyorum\n\n**✅ Kanıt / çıktı:** Değişkenli, çıktılı bir modül öncesi yapı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 9,
+   "n": 3,
+   "title": "S09·T3 — State yönetimi",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 3/8\n\n**Konu:** Remote backend, kilitleme, import, replace, drift.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials) → State\n- YouTube (arama): [terraform state remote backend lock](https://www.youtube.com/results?search_query=terraform+state+remote+backend+lock)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] State dosyasının neden hassas olduğunu anlatabiliyorum\n- [ ] Var olan kaynağı `import` ile içeri alabiliyorum\n\n**✅ Kanıt / çıktı:** Remote backend (S3 veya GitLab-managed) kurulumu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 9,
+   "n": 4,
+   "title": "S09·T4 — Modüller",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 4/8\n\n**Konu:** Kendi modülünü yaz, sürümle, registry modüllerini kullan.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials) → Modules\n- YouTube: [Learn Terraform (and AWS) by Building a Dev Environment — freeCodeCamp](https://www.youtube.com/watch?v=iRaai1IBlB0)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Tekrar kullanılabilir modül yazıp iki ortamda kullandım\n\n**✅ Kanıt / çıktı:** `modules/` klasörü + dev/prod kullanım örneği.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 9,
+   "n": 5,
+   "title": "S09·T5 — AWS temelleri ve güvenli hesap kurulumu",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 5/8\n\n**Konu:** Root hesabı kilitle, MFA, IAM kullanıcı/rol, Budget alarmı, bölge seçimi.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Terraform + AWS kursu — AWS Temelleri (2 sa 58 dk)\n- [AWS Free Tier (şartları güncel kontrol et)](https://aws.amazon.com/free/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Root yerine IAM ile çalışıyorum, MFA açık\n- [ ] Bütçe alarmı kurdum (ör. 5 USD)\n\n**✅ Kanıt / çıktı:** Hesap güvenlik kontrol listesi (gizli bilgi olmadan).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 9,
+   "n": 6,
+   "title": "S09·T6 — Terraform ile AWS: EC2, SG, S3",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 6/8\n\n**Konu:** Güvenlik grubu, key pair, EC2 örneği, S3 kovası; apply ve destroy.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Terraform + AWS kursu — Terraform ile AWS (1 sa 21 dk)\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials) → AWS get started\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Terraform ile EC2 açıp SSH ile bağlandım ve `destroy` ile temizledim\n\n**✅ Kanıt / çıktı:** AWS kaynakları kodda, maliyet 0'a döndü (destroy kanıtı).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 9,
+   "n": 7,
+   "title": "S09·T7 — İleri konular ve kalite kapıları",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 7/8\n\n**Konu:** Workspace, provisioner'ların sınırları, fmt/validate/tflint/checkov, pipeline'da plan.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Terraform + AWS kursu — Terraform İleri Konular (33 dk)\n- YouTube (arama): [terraform checkov tflint CI pipeline](https://www.youtube.com/results?search_query=terraform+checkov+tflint+CI+pipeline)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pipeline'da `plan` çıktısı PR'a düşüyor\n- [ ] Güvenlik tarayıcısı bulgusunu düzeltebiliyorum\n\n**✅ Kanıt / çıktı:** Terraform CI job'ı (fmt+validate+tflint+checkov).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 9,
+   "n": 8,
+   "title": "S09·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 09 — Terraform — Infrastructure as Code** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-09.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 10,
+   "n": 1,
+   "title": "S10·T1 — IAM derinlemesine",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 1/8\n\n**Konu:** Policy yapısı, rol, STS assume-role, permission boundary, Access Analyzer.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 5 → IAM dersleri\n- [AWS Skill Builder](https://skillbuilder.aws)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] En az yetki ilkesiyle policy yazabiliyorum\n- [ ] Kullanıcı ile rol farkını anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Bir S3 kovasına salt-okuma rolü + test.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 10,
+   "n": 2,
+   "title": "S10·T2 — VPC ve ağ tasarımı",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 2/8\n\n**Konu:** Subnet, route table, IGW, NAT, SG vs NACL, VPC endpoint.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 5 → VPC dersleri\n- [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Public/private subnet'li VPC'yi çizip kurabiliyorum\n- [ ] NAT Gateway maliyetini bilerek karar verebiliyorum\n\n**✅ Kanıt / çıktı:** VPC diyagramı + Terraform kodu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 10,
+   "n": 3,
+   "title": "S10·T3 — EC2, EBS, ELB ve Auto Scaling",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 3/8\n\n**Konu:** AMI, launch template, ALB, hedef grupları, ASG politikaları.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 5 → EC2/ELB/ASG dersleri\n- [AWS Skill Builder](https://skillbuilder.aws)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] ALB arkasında ASG ile ölçeklenen basit bir uygulama çalıştırdım\n\n**✅ Kanıt / çıktı:** ASG ölçeklenme gözlem notu (yük altında).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 10,
+   "n": 4,
+   "title": "S10·T4 — S3, CloudFront ve Route 53",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 4/8\n\n**Konu:** Kova politikaları, yaşam döngüsü, statik site, CDN, DNS.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 5 → S3/CloudFront/Route53 dersleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] S3 + CloudFront ile statik site yayınladım\n- [ ] Kova güvenlik ayarlarını açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** Çalışan statik site + yaşam döngüsü kuralı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 10,
+   "n": 5,
+   "title": "S10·T5 — RDS ve ElastiCache",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 5/8\n\n**Konu:** Multi-AZ, read replica, yedek, parametre grupları.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 5 → RDS/ElastiCache dersleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Multi-AZ ile read replica farkını anlatabiliyorum\n- [ ] Otomatik yedekten geri yükleme akışını biliyorum\n\n**✅ Kanıt / çıktı:** RDS kurulum + geri yükleme notu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 10,
+   "n": 6,
+   "title": "S10·T6 — İzleme, denetim ve maliyet",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 6/8\n\n**Konu:** CloudWatch, CloudTrail, Cost Explorer, Budgets, etiketleme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 6 → ilgili dersler\n- [AWS Skill Builder](https://skillbuilder.aws)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir alarm kurup tetikleyebiliyorum\n- [ ] Maliyeti etiketle kırabiliyorum\n\n**✅ Kanıt / çıktı:** Alarm + maliyet raporu ekran görüntüsü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 10,
+   "n": 7,
+   "title": "S10·T7 — Terraform ile 3 katmanlı mini ortam",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 7/8\n\n**Konu:** VPC + ALB + ASG + RDS; apply → doğrula → destroy.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Sprint 9 ve 10 görevlerinin birleşimi\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Tek komutla kurulup tek komutla silinen ortam\n- [ ] Maliyeti önceden tahmin ettim\n\n**✅ Kanıt / çıktı:** Terraform kodu repoda, README'de maliyet tahmini.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "terraform",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 10,
+   "n": 8,
+   "title": "S10·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 10 — AWS çekirdek servisleri** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-10.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 11,
+   "n": 1,
+   "title": "S11·T1 — Ansible kavramları ve ad-hoc komutlar",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 1/8\n\n**Konu:** Agentless mimari, inventory, ad-hoc, idempotency.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Jeff Geerling · Ansible 101](https://www.jeffgeerling.com/blog/2020/ansible-101-jeff-geerling-youtube-streaming-series/)\n- [Ansible Docs](https://docs.ansible.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Birden çok hedefe ad-hoc komut çalıştırabiliyorum\n- [ ] Idempotency'yi örnekle anlatabiliyorum\n\n**✅ Kanıt / çıktı:** 2 hedef (VM/konteyner) + inventory dosyası.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ansible",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 11,
+   "n": 2,
+   "title": "S11·T2 — Playbook ve temel modüller",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 2/8\n\n**Konu:** apt, template, service, handlers, loops, koşullar.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Jeff Geerling · Ansible 101](https://www.jeffgeerling.com/blog/2020/ansible-101-jeff-geerling-youtube-streaming-series/) (playbook bölümleri)\n- [Ansible Docs](https://docs.ansible.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Handler ile servis yeniden başlatma akışını kurdum\n\n**✅ Kanıt / çıktı:** Nginx kuran idempotent playbook.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ansible",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 11,
+   "n": 3,
+   "title": "S11·T3 — Role'ler, Galaxy ve lint",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 3/8\n\n**Konu:** Role yapısı, defaults/vars, ansible-lint, Molecule'e giriş.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Ansible Docs](https://docs.ansible.com/) → Roles\n- YouTube (arama): [ansible roles molecule tutorial](https://www.youtube.com/results?search_query=ansible+roles+molecule+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Role'ü yeniden kullanılabilir yazabiliyorum\n- [ ] ansible-lint temiz geçiyor\n\n**✅ Kanıt / çıktı:** `roles/nginx` + lint çıktısı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ansible",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 11,
+   "n": 4,
+   "title": "S11·T4 — Vault, değişken önceliği ve Jinja2",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 4/8\n\n**Konu:** ansible-vault, değişken önceliği, şablonlar.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Ansible Docs](https://docs.ansible.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Gizli veriyi vault ile saklıyorum\n- [ ] Değişken önceliğini açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** Vault'lu değişken + Jinja2 şablonlu yapılandırma.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ansible",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 11,
+   "n": 5,
+   "title": "S11·T5 — Laravel yığınını Ansible ile kurmak",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 5/8\n\n**Konu:** Sprint 6'daki elle kurulumu role'lere çevir: Nginx, PHP-FPM, DB, TLS.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- `notes/laravel-prod-manual.md`\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Boş VM'de tek komutla Laravel uygulaması ayağa kalkıyor\n\n**✅ Kanıt / çıktı:** `ansible-playbook site.yml` ile sıfırdan kurulum kaydı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ansible",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 11,
+   "n": 6,
+   "title": "S11·T6 — Terraform + Ansible birleşimi",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 6/8\n\n**Konu:** Terraform VM'i açar, Ansible yapılandırır; CI'dan çalıştırma.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials)\n- [Ansible Docs](https://docs.ansible.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Altyapı + yapılandırma sürecini tek akışta bağladım\n\n**✅ Kanıt / çıktı:** Pipeline: terraform apply → ansible-playbook.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ansible",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 11,
+   "n": 7,
+   "title": "S11·T7 — Sunucu sertleştirme role'ü",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 7/8\n\n**Konu:** SSH, ufw, fail2ban, unattended-upgrades, kernel parametreleri.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Lynis](https://cisofy.com/lynis/)\n- [Ansible Docs](https://docs.ansible.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Lynis skorunu rolle ölçülebilir artırdım\n\n**✅ Kanıt / çıktı:** Role + Lynis önce/sonra skoru.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 11,
+   "n": 8,
+   "title": "S11·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 11 — Ansible — yapılandırma yönetimi** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-11.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 12,
+   "n": 1,
+   "title": "S12·T1 — Kubernetes mimarisi",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 1/8\n\n**Konu:** Control plane, etcd, kubelet, kube-proxy, API akışı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Giriş (26 dk) + Kubernetes Mimarisi (48 dk)\n- YouTube: [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours] — TechWorld with Nana](https://www.youtube.com/watch?v=X48VuDVv0do) (ilk bölümler)\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir `kubectl apply` isteğinin bileşenler arasındaki yolunu anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Elle çizilmiş mimari diyagram `notes/`'ta.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 12,
+   "n": 2,
+   "title": "S12·T2 — Yerel küme kurulumu",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 2/8\n\n**Konu:** kind ile 3 düğümlü küme, kubectl, k9s, otomatik tamamlama.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes Kurulum (2 sa 3 dk)\n- [kind](https://kind.sigs.k8s.io)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] 3 düğümlü yerel küme çalışıyor\n- [ ] kubectl bağlam/namespace değiştirebiliyorum\n\n**✅ Kanıt / çıktı:** `kind-config.yaml` repoda.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 12,
+   "n": 3,
+   "title": "S12·T3 — Pod, ReplicaSet ve Deployment",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 3/8\n\n**Konu:** Manifest yazma, rollout, rollback, strateji.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 101 (ilk 1/3)\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Deployment güncelleyip geri alabiliyorum\n- [ ] Pod ile Deployment farkını anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Laravel/nginx Deployment manifesti + rollout günlüğü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 12,
+   "n": 4,
+   "title": "S12·T4 — Service ve Ingress",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 4/8\n\n**Konu:** ClusterIP/NodePort/LoadBalancer, ingress-nginx, MetalLB.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 101 (Service/Ingress dersleri)\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Uygulamayı Ingress ile alan adıyla dışarı açtım\n\n**✅ Kanıt / çıktı:** Ingress manifesti + curl kanıtı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 12,
+   "n": 5,
+   "title": "S12·T5 — ConfigMap, Secret, probe ve kaynak limitleri",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 5/8\n\n**Konu:** Yapılandırma ayrımı, liveness/readiness, requests/limits, QoS.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 101 (ilgili dersler)\n- [12-Factor App](https://12factor.net)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] OOMKilled ve CPU throttling'in nedenini açıklayabiliyorum\n\n**✅ Kanıt / çıktı:** Probe'lu, limitli Deployment.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 12,
+   "n": 6,
+   "title": "S12·T6 — Namespace, label ve kubectl ustalığı",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 6/8\n\n**Konu:** Selector'lar, jsonpath, -o yaml, dry-run, kubectl debug.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Doküman yolu: kubernetes.io → Reference → kubectl Quick Reference\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 101 (kalan dersler)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kaynağı elle yazmadan `--dry-run=client -o yaml` ile üretebiliyorum\n\n**✅ Kanıt / çıktı:** Kendi kubectl alias/cheatsheet dosyam.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 12,
+   "n": 7,
+   "title": "S12·T7 — Killercoda ile ilk pratikler",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 7/8\n\n**Konu:** Tarayıcıda hazır lab ortamlarında temel senaryolar.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Killercoda (tarayıcıda ücretsiz lab)](https://killercoda.com)\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 101 bitiş\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] En az 5 senaryoyu tamamladım\n\n**✅ Kanıt / çıktı:** Tamamlanan senaryoların listesi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 12,
+   "n": 8,
+   "title": "S12·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 12 — Kubernetes I — mimari, küme ve temel nesneler** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-12.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 13,
+   "n": 1,
+   "title": "S13·T1 — Volume, PV, PVC ve StorageClass",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 1/8\n\n**Konu:** Kalıcı depolama, erişim modları, dinamik provisioning.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102 (depolama dersleri)\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pod silinince verinin kaybolmadığını gösterdim\n\n**✅ Kanıt / çıktı:** PVC'li uygulama + silme/yeniden oluşturma testi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 13,
+   "n": 2,
+   "title": "S13·T2 — StatefulSet: MySQL ve Redis",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 2/8\n\n**Konu:** Sıralı kimlik, headless service, volumeClaimTemplates.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102\n- YouTube (arama): [Kubernetes StatefulSet MySQL tutorial](https://www.youtube.com/results?search_query=Kubernetes+StatefulSet+MySQL+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Stateful iş yükünü Deployment'tan neden ayırdığımı anlatabiliyorum\n\n**✅ Kanıt / çıktı:** StatefulSet manifestleri repoda.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 13,
+   "n": 3,
+   "title": "S13·T3 — Zamanlama: affinity, taint ve PDB",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 3/8\n\n**Konu:** nodeSelector, affinity, taints/tolerations, PodDisruptionBudget.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Düğüm boşaltırken (drain) uygulamanın ayakta kaldığını gösterdim\n\n**✅ Kanıt / çıktı:** `drain` deneyi notu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 13,
+   "n": 4,
+   "title": "S13·T4 — Kubernetes ağı: CNI, CoreDNS, NetworkPolicy",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 4/8\n\n**Konu:** Pod ağı, servis keşfi, varsayılan-reddet NetworkPolicy.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102\n- YouTube (arama): [Kubernetes networking explained CNI CoreDNS](https://www.youtube.com/results?search_query=Kubernetes+networking+explained+CNI+CoreDNS)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pod'dan Pod'a trafiğin yolunu anlatabiliyorum\n- [ ] NetworkPolicy ile iletişimi kısıtlayıp test ettim\n\n**✅ Kanıt / çıktı:** Varsayılan-reddet politikası + izin kuralları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 13,
+   "n": 5,
+   "title": "S13·T5 — RBAC ve ServiceAccount",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 5/8\n\n**Konu:** Role/ClusterRole, binding, en az yetki, PodSecurity.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Salt-okunur bir kullanıcı/SA oluşturup `kubectl auth can-i` ile doğruladım\n\n**✅ Kanıt / çıktı:** RBAC manifestleri + test çıktısı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 13,
+   "n": 6,
+   "title": "S13·T6 — Job, CronJob, DaemonSet ve HPA",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 6/8\n\n**Konu:** Toplu işler, her düğümde çalışan ajanlar, otomatik ölçekleme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Yük altında HPA'nın pod sayısını artırdığını gözlemledim\n\n**✅ Kanıt / çıktı:** HPA deneyi grafiği/çıktısı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 13,
+   "n": 7,
+   "title": "S13·T7 — Sorun giderme: bozuk manifestler",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 7/8\n\n**Konu:** CrashLoopBackOff, ImagePullBackOff, Pending, OOMKilled teşhisi.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Killercoda (tarayıcıda ücretsiz lab)](https://killercoda.com)\n- Doküman yolu: kubernetes.io → Tasks → Monitoring, Logging, and Debugging\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bilerek bozulmuş 5 senaryoyu `describe/logs/events` ile çözdüm\n\n**✅ Kanıt / çıktı:** Hata → teşhis → çözüm tablosu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 13,
+   "n": 8,
+   "title": "S13·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 13 — Kubernetes II — depolama, ağ, zamanlama ve güvenlik** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-13.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 14,
+   "n": 1,
+   "title": "S14·T1 — Helm: kullanım ve chart yazma",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 1/7\n\n**Konu:** Release, values, şablonlar, chart yazma.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Helm Docs](https://helm.sh/docs/)\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Kubernetes 102 / Ek bilgiler (Helm dersleri varsa)\n- YouTube (arama): [Helm tutorial for beginners](https://www.youtube.com/results?search_query=Helm+tutorial+for+beginners)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Hazır chart'ı özelleştirip kurdum\n- [ ] Kendi chart'ımı yazdım\n\n**✅ Kanıt / çıktı:** `charts/app` Helm chart'ı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 14,
+   "n": 2,
+   "title": "S14·T2 — Kustomize ile ortam katmanları",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 2/7\n\n**Konu:** base/overlay yapısı, dev/prod farkları.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Doküman yolu: kubectl.docs.kubernetes.io → Kustomize\n- YouTube (arama): [Kustomize overlays tutorial](https://www.youtube.com/results?search_query=Kustomize+overlays+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Helm ile Kustomize'ı ne zaman seçeceğimi anlatabiliyorum\n\n**✅ Kanıt / çıktı:** dev ve prod overlay'leri.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 14,
+   "n": 3,
+   "title": "S14·T3 — Argo CD ile GitOps",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 3/7\n\n**Konu:** Kurulum, Application, otomatik senkron, app-of-apps.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Argo CD Docs](https://argo-cd.readthedocs.io/en/stable/)\n- YouTube (arama): [ArgoCD tutorial for beginners GitOps TechWorld with Nana](https://www.youtube.com/results?search_query=ArgoCD+tutorial+for+beginners+GitOps+TechWorld+with+Nana)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Git'e push → küme otomatik güncelleniyor\n- [ ] Elle yapılan değişikliğin geri alındığını (self-heal) gördüm\n\n**✅ Kanıt / çıktı:** Argo CD Application manifestleri + sync kaydı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 14,
+   "n": 4,
+   "title": "S14·T4 — Proje: Laravel+Vue+Redis+MySQL'i Kubernetes'e taşı",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 4/7\n\n**Konu:** Önceki sprintlerin birleşimi: Deployment, Service, Ingress, StatefulSet, Secret.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- Udemy · Kubernetes kursu (Türkçe, satın alınacak) — Proje bölümü (1 sa 45 dk) + Ek Bilgiler (3 sa 27 dk) ilgili dersler\n- [12-Factor App](https://12factor.net)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Uygulama kümede uçtan uca çalışıyor\n\n**✅ Kanıt / çıktı:** Repoda `k8s/` klasörü ve README.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "kubernetes",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 14,
+   "n": 5,
+   "title": "S14·T5 — GitOps boru hattı: CI → registry → Argo CD",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 5/7\n\n**Konu:** Pipeline imajı üretir, manifest repo'sunu günceller, Argo CD dağıtır.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/)\n- [Argo CD Docs](https://argo-cd.readthedocs.io/en/stable/)\n- [GitHub Actions Docs](https://docs.github.com/en/actions)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kod değişikliğinden canlı kümeye kadar tam akış çalışıyor\n\n**✅ Kanıt / çıktı:** Akış diyagramı + kayıt.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "ci-cd",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 14,
+   "n": 6,
+   "title": "S14·T6 — KİLOMETRE TAŞI: CV v2 ve ilk başvurular",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 6/7\n\n**Konu:** Artık DevOps ağırlıklı hikâyen var: CV'yi güncelle ve başvuruya başla.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [roadmap.sh/devops](https://roadmap.sh/devops)\n- Mevcut CV (EN/TR) + Sprint 1-14 çıktıları\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] CV'de her proje için yığın + ölçülebilir sonuç var\n- [ ] İlk 5 başvuruyu gönderdim\n\n**✅ Kanıt / çıktı:** CV v2 (EN) ve başvuru takip tablosu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 14,
+   "n": 7,
+   "title": "S14·T7 — Sprint retro ve notlar",
+   "body": "> **Sprint 14 — Kubernetes III — Helm, Kustomize, GitOps ve ilk başvurular** · Görev 7/7\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-14.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 15,
+   "n": 1,
+   "title": "S15·T1 — Prometheus mimarisi ve PromQL",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 1/8\n\n**Konu:** Scrape modeli, node_exporter, rate/irate, aggregation.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Prometheus Docs](https://prometheus.io/docs/) → Overview ve Querying\n- YouTube (arama): [Prometheus tutorial TechWorld with Nana](https://www.youtube.com/results?search_query=Prometheus+tutorial+TechWorld+with+Nana)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pull modeli ile push modelini karşılaştırabiliyorum\n- [ ] `rate()` ile istek oranı sorgusu yazabiliyorum\n\n**✅ Kanıt / çıktı:** Compose ile Prometheus + node_exporter.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 15,
+   "n": 2,
+   "title": "S15·T2 — Grafana panoları ve alarmlar",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 2/8\n\n**Konu:** Veri kaynağı, panel, değişkenler, alerting.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Grafana Tutorials](https://grafana.com/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sistem durumu panosu kurdum\n- [ ] Bir alarm kuralı yazıp tetikledim\n\n**✅ Kanıt / çıktı:** Pano JSON'u repoda.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 15,
+   "n": 3,
+   "title": "S15·T3 — Uygulama ve altyapı exporter'ları",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 3/8\n\n**Konu:** Nginx, PHP-FPM, Redis, MySQL exporter'ları; Laravel metrikleri.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Prometheus Docs](https://prometheus.io/docs/)\n- YouTube (arama): [redis_exporter nginx exporter php-fpm exporter Prometheus](https://www.youtube.com/results?search_query=redis_exporter+nginx+exporter+php-fpm+exporter+Prometheus)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir uygulama metriğini panoya kadar taşıdım\n\n**✅ Kanıt / çıktı:** Exporter'lı yığın + pano ekran görüntüsü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 15,
+   "n": 4,
+   "title": "S15·T4 — Loki ile merkezi log",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 4/8\n\n**Konu:** Loki, Promtail/Grafana Alloy, LogQL.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Doküman yolu: grafana.com → Docs → Loki\n- [Grafana Tutorials](https://grafana.com/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] LogQL ile hata satırlarını filtreleyebiliyorum\n- [ ] Metrikten loga geçişi gösterebiliyorum\n\n**✅ Kanıt / çıktı:** Log paneli + LogQL sorguları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 15,
+   "n": 5,
+   "title": "S15·T5 — Kubernetes'te kube-prometheus-stack",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 5/8\n\n**Konu:** Helm ile Prometheus Operator, ServiceMonitor, hazır panolar.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Helm Docs](https://helm.sh/docs/)\n- [Prometheus Docs](https://prometheus.io/docs/)\n- YouTube (arama): [kube-prometheus-stack helm tutorial](https://www.youtube.com/results?search_query=kube-prometheus-stack+helm+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Uygulamama ServiceMonitor ekledim\n\n**✅ Kanıt / çıktı:** Kümede çalışan izleme yığını.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 15,
+   "n": 6,
+   "title": "S15·T6 — Alertmanager, SLI/SLO ve runbook",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 6/8\n\n**Konu:** Alarm yönlendirme, gürültüyü azaltma, hata bütçesi.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Google SRE Book](https://sre.google/sre-book/table-of-contents/) → Monitoring Distributed Systems, Service Level Objectives\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Uygulamam için SLI/SLO tanımladım\n- [ ] Her alarmın bir runbook'u var\n\n**✅ Kanıt / çıktı:** `runbooks/` klasörü + SLO belgesi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 15,
+   "n": 7,
+   "title": "S15·T7 — Arıza tatbikatı ve postmortem",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 7/8\n\n**Konu:** Kasıtlı arıza çıkar, izleme ile tespit et, suçlamasız postmortem yaz.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Google SRE Book](https://sre.google/sre-book/table-of-contents/) → Postmortem Culture\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Arızayı alarm/log ile kendim tespit ettim\n- [ ] Postmortem'de kök neden ve aksiyonlar var\n\n**✅ Kanıt / çıktı:** `postmortems/001.md`.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "observability",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 15,
+   "n": 8,
+   "title": "S15·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 15 — Gözlemlenebilirlik — Prometheus, Grafana, Loki** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-15.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 16,
+   "n": 1,
+   "title": "S16·T1 — Kali VM ve izole lab ağı",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 1/8\n\n**Konu:** Kali'yi VM olarak kur, host-only/izole ağ, temel araçlar.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Kali Docs](https://www.kali.org/docs/)\n- [TryHackMe](https://tryhackme.com)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Yalnızca kendi lab'ımda tarama yaptığımdan eminim\n- [ ] nmap ile servis keşfi yapabiliyorum\n\n**✅ Kanıt / çıktı:** Lab ağ şeması + nmap çıktısı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 16,
+   "n": 2,
+   "title": "S16·T2 — Zafiyetli hedef ve tarama (kendi lab'ında)",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 2/8\n\n**Konu:** Docker'da OWASP Juice Shop/DVWA; nmap, nikto, temel web zafiyetleri.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [OWASP Top 10](https://owasp.org/www-project-top-ten/)\n- [TryHackMe](https://tryhackme.com)\n- Yalnızca kendi kurduğun hedeflerde çalış\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Bir zafiyeti bulup nedenini ve düzeltmesini anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Bulgu raporu (zafiyet → etki → düzeltme).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 16,
+   "n": 3,
+   "title": "S16·T3 — OWASP Top 10 ve Laravel güvenliği",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 3/8\n\n**Konu:** Injection, kimlik doğrulama, erişim kontrolü; Laravel varsayılanları ve tuzakları.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [OWASP Top 10](https://owasp.org/www-project-top-ten/)\n- Laravel Docs → Security\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kendi uygulamamda 5 maddelik güvenlik kontrol listesi uyguladım\n\n**✅ Kanıt / çıktı:** Laravel güvenlik kontrol listesi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 16,
+   "n": 4,
+   "title": "S16·T4 — Linux sertleştirme",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 4/8\n\n**Konu:** Lynis, CIS önerileri, sysctl, auditd.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Lynis](https://cisofy.com/lynis/)\n- YouTube (arama): [CIS benchmark Ubuntu hardening](https://www.youtube.com/results?search_query=CIS+benchmark+Ubuntu+hardening)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Lynis skorunu artıran 5 değişiklik yaptım\n\n**✅ Kanıt / çıktı:** Önce/sonra Lynis raporu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 16,
+   "n": 5,
+   "title": "S16·T5 — Konteyner ve imaj güvenliği",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 5/8\n\n**Konu:** Trivy, Docker Bench, imza/SBOM'e giriş, Falco kavramı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Trivy](https://trivy.dev)\n- [Docker Docs](https://docs.docker.com/) → Security\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pipeline'a imaj tarama kapısı ekledim\n\n**✅ Kanıt / çıktı:** Kırılan ve düzelen build örneği.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 16,
+   "n": 6,
+   "title": "S16·T6 — Kubernetes güvenliği",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 6/8\n\n**Konu:** PodSecurity, NetworkPolicy, kube-bench, Kyverno/OPA'ya giriş.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n- YouTube (arama): [kube-bench Kyverno tutorial](https://www.youtube.com/results?search_query=kube-bench+Kyverno+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Yetkili (privileged) pod'u politika ile engelledim\n\n**✅ Kanıt / çıktı:** Politika manifestleri + engellenen pod çıktısı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 16,
+   "n": 7,
+   "title": "S16·T7 — Secret yönetimi",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 7/8\n\n**Konu:** SOPS, Sealed Secrets, Vault'a giriş, git'e secret sızmasını önleme.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [SOPS age Kubernetes secrets GitOps](https://www.youtube.com/results?search_query=SOPS+age+Kubernetes+secrets+GitOps)\n- YouTube (arama): [HashiCorp Vault tutorial](https://www.youtube.com/results?search_query=HashiCorp+Vault+tutorial)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Git'te şifreli secret saklayıp kümede çözebiliyorum\n\n**✅ Kanıt / çıktı:** Sealed Secret/SOPS ile çalışan örnek.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "security",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 16,
+   "n": 8,
+   "title": "S16·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 16 — DevSecOps — Kali, sertleştirme, container ve K8s güvenliği** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-16.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 17,
+   "n": 1,
+   "title": "S17·T1 — ECS ve Fargate",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 1/8\n\n**Konu:** Task definition, service, ALB entegrasyonu; Laravel konteyneri.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [AWS Skill Builder](https://skillbuilder.aws)\n- [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Konteynerimi Fargate'te yayınladım ve sildim\n\n**✅ Kanıt / çıktı:** Terraform ile ECS servisi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 17,
+   "n": 2,
+   "title": "S17·T2 — EKS'e giriş (maliyet dikkat)",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 2/8\n\n**Konu:** Terraform ile EKS, node group, IRSA; işin bitince hemen destroy.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [AWS Skill Builder](https://skillbuilder.aws)\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials)\n- [AWS Free Tier (şartları güncel kontrol et)](https://aws.amazon.com/free/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] EKS'te uygulamamı çalıştırdım\n- [ ] Maliyeti hesaplayıp aynı gün sildim\n\n**✅ Kanıt / çıktı:** Maliyet notu + destroy kanıtı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 17,
+   "n": 3,
+   "title": "S17·T3 — Serverless ve olay tabanlı servisler",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 3/8\n\n**Konu:** Lambda, API Gateway, SQS, SNS, EventBridge.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [AWS Skill Builder](https://skillbuilder.aws)\n- Udemy · AWS SAA kursu (eski içerik) — Bölüm 6 → ilgili dersler\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Olay → Lambda → kuyruk akışını kurdum\n\n**✅ Kanıt / çıktı:** Küçük olay akışı + Terraform.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 17,
+   "n": 4,
+   "title": "S17·T4 — Well-Architected ve felaket kurtarma",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 4/8\n\n**Konu:** 6 sütun, RPO/RTO, yedekleme-yeniden kurma stratejileri.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kendi mimarimi 6 sütuna göre değerlendirdim\n\n**✅ Kanıt / çıktı:** Well-Architected özeti (1 sayfa).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 17,
+   "n": 5,
+   "title": "S17·T5 — Güncel SAA sınav kılavuzu ve deneme sınavı 1",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 5/8\n\n**Konu:** Sınav sürümünü resmi sayfadan doğrula; eski kurs içeriğiyle farkı belirle.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [AWS SAA resmi sertifika sayfası (güncel sınav sürümü burada)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)\n- Güncel bir deneme sınavı seti (Tutorials Dojo vb.)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Hangi sınav sürümüne hazırlandığımı biliyorum\n- [ ] Zayıf alan listem var\n\n**✅ Kanıt / çıktı:** Deneme sınavı sonucu + zayıf alanlar.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 17,
+   "n": 6,
+   "title": "S17·T6 — Zayıf alan çalışması ve deneme sınavı 2",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 6/8\n\n**Konu:** Eksik konuları lab ile kapat; ikinci deneme.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [AWS SAA resmi sertifika sayfası (güncel sınav sürümü burada)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)\n- [AWS Skill Builder](https://skillbuilder.aws)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Deneme sınavlarında tutarlı biçimde geçer not alıyorum\n\n**✅ Kanıt / çıktı:** İkinci deneme sonucu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 17,
+   "n": 7,
+   "title": "S17·T7 — Sınav günü (opsiyonel)",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 7/8\n\n**Konu:** Hazır hissettiğinde sınava gir.\n\n**⏱ Tahmini süre:** ~2 saat\n\n**📚 Kaynaklar**\n- [AWS SAA resmi sertifika sayfası (güncel sınav sürümü burada)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sınavı tamamladım veya tarih belirledim\n\n**✅ Kanıt / çıktı:** Sertifika veya planlanan tarih.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "aws",
+    "est-2h"
+   ],
+   "hours": 2
+  },
+  {
+   "sprint": 17,
+   "n": 8,
+   "title": "S17·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 17 — AWS ileri — ECS/EKS, serverless ve SAA hazırlığı** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-17.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 18,
+   "n": 1,
+   "title": "S18·T1 — Mimari tasarım belgesi",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 1/7\n\n**Konu:** Hedef sistem: Laravel+Vue+Redis+MySQL platformu; diyagram, ADR'ler, maliyet tahmini.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [12-Factor App](https://12factor.net)\n- [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Her teknoloji seçimi için tek paragraflık gerekçem var\n\n**✅ Kanıt / çıktı:** `docs/architecture.md` + diyagram.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 18,
+   "n": 2,
+   "title": "S18·T2 — Altyapıyı Terraform ile kodla",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 2/7\n\n**Konu:** Bütçeye göre AWS veya yerel (libvirt/kind); modüler, remote state.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [HashiCorp Terraform Tutorials](https://developer.hashicorp.com/terraform/tutorials)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Tüm altyapı sıfırdan tek komutla kuruluyor\n\n**✅ Kanıt / çıktı:** `infra/` klasörü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 18,
+   "n": 3,
+   "title": "S18·T3 — CI: build, test, tara, push",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 3/7\n\n**Konu:** Pipeline: lint → test → imaj → Trivy → registry.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/)\n- [GitHub Actions Docs](https://docs.github.com/en/actions)\n- [Trivy](https://trivy.dev)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Pipeline güvenlik kapılarıyla yeşil\n\n**✅ Kanıt / çıktı:** Pipeline kaydı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 18,
+   "n": 4,
+   "title": "S18·T4 — GitOps dağıtımı ve ortamlar",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 4/7\n\n**Konu:** Argo CD ile dev/prod ortamları, Helm/Kustomize.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Argo CD Docs](https://argo-cd.readthedocs.io/en/stable/)\n- [Helm Docs](https://helm.sh/docs/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] dev'e otomatik, prod'a onaylı dağıtım\n\n**✅ Kanıt / çıktı:** `deploy/` klasörü + Argo CD uygulamaları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 18,
+   "n": 5,
+   "title": "S18·T5 — İzleme ve log entegrasyonu",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 5/7\n\n**Konu:** Prometheus, Grafana, Loki, alarmlar, SLO.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Prometheus Docs](https://prometheus.io/docs/)\n- [Grafana Tutorials](https://grafana.com/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Platformun SLO panosu ve alarmları var\n\n**✅ Kanıt / çıktı:** Pano ve alarm kuralları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 18,
+   "n": 6,
+   "title": "S18·T6 — Güvenlik katmanı",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 6/7\n\n**Konu:** NetworkPolicy, RBAC, secret yönetimi, imaj tarama.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Trivy](https://trivy.dev)\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Güvenlik kontrol listesi tamam\n\n**✅ Kanıt / çıktı:** `docs/security.md`.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 18,
+   "n": 7,
+   "title": "S18·T7 — Sprint retro ve notlar",
+   "body": "> **Sprint 18 — Capstone I — tasarım ve platformu kurmak** · Görev 7/7\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-18.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 19,
+   "n": 1,
+   "title": "S19·T1 — Yük testi ve otomatik ölçekleme",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 1/7\n\n**Konu:** k6 ile yük, HPA, darboğaz analizi.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [k6 load testing tutorial](https://www.youtube.com/results?search_query=k6+load+testing+tutorial)\n- [Kubernetes Docs · Tutorials](https://kubernetes.io/docs/tutorials/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Darboğazı bulup giderdim\n\n**✅ Kanıt / çıktı:** Yük testi raporu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 19,
+   "n": 2,
+   "title": "S19·T2 — Arıza tatbikatları (chaos)",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 2/7\n\n**Konu:** Pod öldür, düğüm boşalt, Redis failover, disk doldur.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Google SRE Book](https://sre.google/sre-book/table-of-contents/)\n- [Prometheus Docs](https://prometheus.io/docs/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] 4 arıza senaryosunun her birini tespit edip çözdüm\n\n**✅ Kanıt / çıktı:** Tatbikat günlüğü.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 19,
+   "n": 3,
+   "title": "S19·T3 — Yedekten kurtarma tatbikatı",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 3/7\n\n**Konu:** DB geri yükleme, Git'ten kümeyi yeniden kurma.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Google SRE Book](https://sre.google/sre-book/table-of-contents/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Kümeyi sıfırdan Git'ten yeniden kurabiliyorum\n- [ ] RPO/RTO'yu ölçtüm\n\n**✅ Kanıt / çıktı:** Kurtarma süresi raporu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 19,
+   "n": 4,
+   "title": "S19·T4 — Runbook'lar ve postmortem'ler",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 4/7\n\n**Konu:** Her alarm için runbook; tatbikatlardan postmortem.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Google SRE Book](https://sre.google/sre-book/table-of-contents/) → Postmortem Culture\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] En az 3 runbook ve 2 postmortem yazdım\n\n**✅ Kanıt / çıktı:** `runbooks/` ve `postmortems/`.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 19,
+   "n": 5,
+   "title": "S19·T5 — README, diyagramlar ve demo kaydı",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 5/7\n\n**Konu:** Repo bir işe alımcının 5 dakikada anlayacağı hale gelsin.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- İyi README örnekleri (GitHub'da öne çıkan DevOps repoları)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] README: problem → mimari → nasıl çalıştırılır → öğrenilenler\n\n**✅ Kanıt / çıktı:** README + kısa demo videosu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "capstone",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 19,
+   "n": 6,
+   "title": "S19·T6 — Blog yazısı ve öğrenilenler",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 6/7\n\n**Konu:** Süreci anlatan 1 yazı (dev.to/Medium/LinkedIn).\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [roadmap.sh/devops](https://roadmap.sh/devops)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Zor kısımları ve hatalarımı dürüstçe yazdım\n\n**✅ Kanıt / çıktı:** Yayınlanmış yazı.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 19,
+   "n": 7,
+   "title": "S19·T7 — Sprint retro ve notlar",
+   "body": "> **Sprint 19 — Capstone II — dayanıklılık, tatbikat ve dokümantasyon** · Görev 7/7\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-19.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 20,
+   "n": 1,
+   "title": "S20·T1 — CV (EN) yeniden yazımı",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 1/8\n\n**Konu:** Her rolde yığın + ölçülebilir sonuç; kısa görevler için net hikâye; gereksiz kişisel veriler çıkar.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [roadmap.sh/devops](https://roadmap.sh/devops)\n- Mevcut CV + proje çıktıları\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] CV tek sayfada: özet, yığın, sonuçlar, projeler\n\n**✅ Kanıt / çıktı:** CV v3 (EN).\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 20,
+   "n": 2,
+   "title": "S20·T2 — CV (TR), LinkedIn ve GitHub profili",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 2/8\n\n**Konu:** Türkçe CV, LinkedIn başlık/özet, GitHub profil README'si, sabitlenmiş repolar.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- GitHub profil README örnekleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Profilim 'DevOps/Platform ağırlıklı senior backend' hikâyesini anlatıyor\n\n**✅ Kanıt / çıktı:** Güncel CV (TR) ve profil bağlantıları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 20,
+   "n": 3,
+   "title": "S20·T3 — Mülakat I: Linux ve ağ",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 3/8\n\n**Konu:** 'Bir web isteği tarayıcıdan sunucuya nasıl gider', sistem yavaşladı senaryosu, izin/süreç soruları.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [DevOps interview questions Linux networking](https://www.youtube.com/results?search_query=DevOps+interview+questions+Linux+networking)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sorulara sesli ve akıcı cevap verebiliyorum\n\n**✅ Kanıt / çıktı:** Soru-cevap notları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 20,
+   "n": 4,
+   "title": "S20·T4 — Mülakat II: Docker, Kubernetes, CI/CD, Terraform",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 4/8\n\n**Konu:** Senaryo soruları, 'pod CrashLoopBackOff' teşhisi, pipeline tasarımı; arkadaşla mock.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- YouTube (arama): [Kubernetes interview questions scenario based](https://www.youtube.com/results?search_query=Kubernetes+interview+questions+scenario+based)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Her teknoloji için 3 senaryo cevabım hazır\n\n**✅ Kanıt / çıktı:** Mock mülakat geri bildirimi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 20,
+   "n": 5,
+   "title": "S20·T5 — AB hedefi: remote şirketler ve relocate yolu",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 5/8\n\n**Konu:** Remote kabul eden AB şirketleri; EOR/doğrudan sözleşme; Blue Card ve maaş eşikleri (resmi kaynaklardan).\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- Resmi: make-it-in-germany.com ve ilgili ülkenin göçmenlik sitesi\n- Remote iş ilanı platformları\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Hedef 30 şirket listem ve gereksinimleri var\n- [ ] Vize/Blue Card şartlarını resmi kaynaktan not ettim\n\n**✅ Kanıt / çıktı:** Hedef şirket tablosu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 20,
+   "n": 6,
+   "title": "S20·T6 — Başvuru sistemi",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 6/8\n\n**Konu:** Haftalık başvuru hedefi, takip tablosu, tanışma mesajları.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [roadmap.sh/devops](https://roadmap.sh/devops)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Haftada X başvuru ve Y görüşme hedefi koydum\n\n**✅ Kanıt / çıktı:** Takip tablosu.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 20,
+   "n": 7,
+   "title": "S20·T7 — Davranışsal mülakat ve maaş müzakeresi",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 7/8\n\n**Konu:** 'Neden kısa süreli görevler?' cevabı, STAR hikâyeleri, maaş aralığı.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- STAR yöntemi\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] 5 STAR hikâyem ve kısa süreli görevler için net cevabım var\n\n**✅ Kanıt / çıktı:** Hikâye notları.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "career",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 20,
+   "n": 8,
+   "title": "S20·T8 — Sprint retro ve notlar",
+   "body": "> **Sprint 20 — Pazara çıkış — CV, mülakat ve AB hedefi** · Görev 8/8\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-20.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  },
+  {
+   "sprint": 21,
+   "n": 1,
+   "title": "S21·T1 — Node.js temellerini tazele",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 1/7\n\n**Konu:** Modüller, async/await, npm/pnpm, Vite.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Node.js Learn](https://nodejs.org/en/learn)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Küçük bir CLI aracı yazabiliyorum\n\n**✅ Kanıt / çıktı:** Küçük Node CLI repo.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "nodejs",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 21,
+   "n": 2,
+   "title": "S21·T2 — Express/Fastify API + Docker + CI",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 2/7\n\n**Konu:** Basit API, multi-stage Dockerfile, pipeline.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Node.js Learn](https://nodejs.org/en/learn)\n- [Docker Docs](https://docs.docker.com/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Node servisini konteynerleyip pipeline'a bağladım\n\n**✅ Kanıt / çıktı:** API repo + pipeline.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "nodejs",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 21,
+   "n": 3,
+   "title": "S21·T3 — Symfony 7 hızlı geçiş",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 3/7\n\n**Konu:** Routing, controller, servis konteyneri, Twig/API.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Symfony Docs](https://symfony.com/doc/current/index.html)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Laravel ile Symfony farklarını anlatabiliyorum\n\n**✅ Kanıt / çıktı:** Küçük Symfony uygulaması.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "php",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 21,
+   "n": 4,
+   "title": "S21·T4 — Symfony: Messenger ve Doctrine",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 4/7\n\n**Konu:** Mesaj kuyruğu, Doctrine ORM/migrations.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Symfony Docs](https://symfony.com/doc/current/index.html)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Messenger ile arka plan işi çalıştırdım\n\n**✅ Kanıt / çıktı:** Messenger örneği.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "php",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 21,
+   "n": 5,
+   "title": "S21·T5 — Shopware 6: eklenti mimarisi ve dev ortamı",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 5/7\n\n**Konu:** Dockerize geliştirme ortamı, plugin yapısı.\n\n**⏱ Tahmini süre:** ~4 saat\n\n**📚 Kaynaklar**\n- [Shopware Developer Docs](https://developer.shopware.com/docs/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Basit bir Shopware eklentisi çalıştırdım\n\n**✅ Kanıt / çıktı:** Shopware plugin örneği.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "php",
+    "est-4h"
+   ],
+   "hours": 4
+  },
+  {
+   "sprint": 21,
+   "n": 6,
+   "title": "S21·T6 — Symfony/Shopware için CI/CD ve konteyner",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 6/7\n\n**Konu:** Üretim imajı, pipeline, Kubernetes'e dağıtım.\n\n**⏱ Tahmini süre:** ~3 saat\n\n**📚 Kaynaklar**\n- [Docker Docs](https://docs.docker.com/)\n- [GitLab CI/CD Docs](https://docs.gitlab.com/ci/)\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Symfony/Shopware uygulamasını pipeline ile dağıttım\n\n**✅ Kanıt / çıktı:** Pipeline + manifestler.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "php",
+    "est-3h"
+   ],
+   "hours": 3
+  },
+  {
+   "sprint": 21,
+   "n": 7,
+   "title": "S21·T7 — Sprint retro ve notlar",
+   "body": "> **Sprint 21 — Yan hat — Node.js ve PHP ekosistemi (Symfony/Shopware)** · Görev 7/7\n\n**Konu:** Sprintte öğrendiklerini repoya yaz; sprint hedeflerini kanıtlarıyla kontrol et.\n\n**⏱ Tahmini süre:** ~1 saat\n\n**📚 Kaynaklar**\n- Bu sprintin görevlerinin 'kanıt/çıktı' maddeleri\n\n**🎯 Hedef — görev sonunda şunları yapabiliyor / anlamış olmalıyım**\n- [ ] Sprint hedeflerinin her birini kanıtıyla işaretledim\n- [ ] En zor konuyu ve nedenini yazdım\n- [ ] Sonraki sprint öncesi eksik kalan görevi belirledim\n\n**✅ Kanıt / çıktı:** `notes/sprint-21.md` commit'lendi.\n\n---\n_Bu görev `ROADMAP.md` yol haritasının parçasıdır. Kurs bölüm numaraları kurs sayfandaki başlıklara göredir._",
+   "labels": [
+    "retro",
+    "est-1h"
+   ],
+   "hours": 1
+  }
+ ],
+ "labels": [
+  {
+   "name": "ansible",
+   "color": "ee0000"
+  },
+  {
+   "name": "aws",
+   "color": "ff9900"
+  },
+  {
+   "name": "capstone",
+   "color": "0052cc"
+  },
+  {
+   "name": "career",
+   "color": "c2e0c6"
+  },
+  {
+   "name": "ci-cd",
+   "color": "fbca04"
+  },
+  {
+   "name": "database",
+   "color": "d93f0b"
+  },
+  {
+   "name": "docker",
+   "color": "0db7ed"
+  },
+  {
+   "name": "git",
+   "color": "f05032"
+  },
+  {
+   "name": "kubernetes",
+   "color": "326ce5"
+  },
+  {
+   "name": "linux",
+   "color": "1d76db"
+  },
+  {
+   "name": "network",
+   "color": "0e8a16"
+  },
+  {
+   "name": "nodejs",
+   "color": "68a063"
+  },
+  {
+   "name": "observability",
+   "color": "e6522c"
+  },
+  {
+   "name": "php",
+   "color": "777bb4"
+  },
+  {
+   "name": "redis",
+   "color": "dc382d"
+  },
+  {
+   "name": "retro",
+   "color": "cfd3d7"
+  },
+  {
+   "name": "scripting",
+   "color": "5319e7"
+  },
+  {
+   "name": "security",
+   "color": "b60205"
+  },
+  {
+   "name": "terraform",
+   "color": "7b42bc"
+  },
+  {
+   "name": "web",
+   "color": "006b75"
+  },
+  {
+   "name": "est-1h",
+   "color": "ededed"
+  },
+  {
+   "name": "est-2h",
+   "color": "ededed"
+  },
+  {
+   "name": "est-3h",
+   "color": "ededed"
+  },
+  {
+   "name": "est-4h",
+   "color": "ededed"
+  }
+ ]
+}
